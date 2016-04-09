@@ -1,6 +1,8 @@
 # FastAndroid_Android
 FastAndroid开源电商项目系列之Android客户端
 
+开发框架:FastAndroid,开发工具:Android Studio
+
 本项目包含以下模块
 商品模块:商品列表，商品分类，商品筛选及搜索，商品详情
 购物车模块:购物车管理，在线支付，地址管理
