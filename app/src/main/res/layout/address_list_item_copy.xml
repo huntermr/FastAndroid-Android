@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="49.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="49.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+        <ImageView android:id="@id/imageView2" android:layout_width="49.0dip" android:layout_height="wrap_content" android:src="@drawable/topbg" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/relContent" android:background="@anim/listitem_mid_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/addressName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/indicator_right_padding" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffa5a5a5" android:id="@id/addressDetail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:singleLine="true" />
+        <ImageView android:id="@id/imageView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/contents_line_gray" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imgState" android:paddingTop="@dimen/indicator_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/header_footer_top_bottom_padding" android:src="@drawable/xuanzhong01" />
+            <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34.0dip" android:text="编辑" android:layout_toLeftOf="@id/textView2" android:layout_alignParentTop="true" />
+            <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="删除" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="设为默认" android:layout_toRightOf="@id/imgState" android:layout_alignBaseline="@id/textView1" android:layout_alignBottom="@id/textView1" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="8.0dip" android:layout_below="@id/relContent" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

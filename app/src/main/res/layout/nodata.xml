@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textIsNoData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:text="暂无评论内容" />
+    </LinearLayout>
+</LinearLayout>

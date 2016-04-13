@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/textDressUp" android:background="@drawable/bg_title" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/top_title" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linBar" android:background="@drawable/bg_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffc2c3c7" android:gravity="center" android:id="@id/textCommentBar" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="评论" android:drawableTop="@drawable/guang_comment" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffc2c3c7" android:gravity="center" android:id="@id/textFavoriteBar" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="喜欢" android:drawableTop="@drawable/guang_favorit_off" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.vancl.guang.view.GuangCustomScroll android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linBar" android:layout_below="@id/textDressUp">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:id="@id/relBigImage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/frameProductImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/imgBig" android:padding="2.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_284x284" />
+                    </FrameLayout>
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textDetailPrice" android:background="@drawable/guang_detail_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_marginBottom="6.0dip" android:layout_alignLeft="@id/frameProductImage" android:layout_alignBottom="@id/frameProductImage" />
+                    <ImageView android:id="@id/imgDetailLook" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@anim/guang_detail_look" android:layout_alignRight="@id/frameProductImage" android:layout_alignBottom="@id/frameProductImage" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linMakeUp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/textMakeUp" android:background="#ffacaeba" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="共 件搭配" />
+                    <com.vancl.custom.HorizontialListView android:id="@id/horizontialMakeUp" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linComment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/textComment" android:background="#ffacaeba" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="用户评论" />
+                    <com.vancl.custom.CustomListView android:id="@id/listComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/list_selector" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textAllComment" android:background="@anim/red_green_button" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="所有评论" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textCommentTip" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="还没有人评论，快来抢沙发吧！" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.vancl.guang.view.GuangCustomScroll>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/textCommentOver" android:background="#ffacaeba" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="用户评论" android:layout_below="@id/textDressUp" />
+    </RelativeLayout>
+    <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mode_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linModeOne" android:background="@anim/title_icon_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/ImgModeOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/mode_one" />
+        <TextView android:textColor="#ffffffff" android:id="@id/textModeOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="列表" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/mode_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linModeTwo" android:background="@anim/title_icon_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/ImgModeTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/mode_two" />
+        <TextView android:id="@id/textModeTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="小图" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/mode_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linModeThree" android:background="@anim/title_icon_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/ImgModeThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/mode_three" />
+        <TextView android:id="@id/textModeThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="大图" />
+    </LinearLayout>
+</LinearLayout>

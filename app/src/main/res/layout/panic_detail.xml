@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center_vertical" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="none" android:layout_gravity="center" android:id="@id/textName" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/relShare" android:layout_alignParentLeft="true" android:layout_centerInParent="true" style="@style/top_title" />
+            <RelativeLayout android:id="@id/relFavorite" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/imgFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_collect_no" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/imgLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relFavorite" />
+            <RelativeLayout android:id="@id/relShare" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_toLeftOf="@id/imgLine" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_share" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/imgLine2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relShare" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="#ff707175" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                    <Gallery android:gravity="center" android:id="@id/galleryProductImage" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="6.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linTab" android:background="@drawable/detail_tab_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relTitle">
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linTuanList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/textBrief" android:background="@drawable/detail_tab_on" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="商品简介" android:singleLine="true" />
+                        <TextView android:id="@id/tabLine1" android:background="@drawable/detail_tab_line" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linTuanRule" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textAttributes" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="商品属性" android:singleLine="true" />
+                        <TextView android:id="@id/tabLine2" android:background="@drawable/detail_tab_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linTuanRule" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textComments" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="购买评论" android:singleLine="true" />
+                        <TextView android:id="@id/tabLine3" android:background="@drawable/detail_tab_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/linTuanRule" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textQuestions" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="疑难提问" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <include android:id="@id/layoutBreif" layout="@layout/panic_detail_breif" />
+                <include android:id="@id/layoutAttr" layout="@layout/detail_attributes" />
+                <include android:id="@id/layoutComments" layout="@layout/detail_comments" />
+                <include android:id="@id/layoutQuestions" layout="@layout/detail_questions" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/linBackGround" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:id="@id/relLogo" layout="@layout/default_logo" />
+</RelativeLayout>

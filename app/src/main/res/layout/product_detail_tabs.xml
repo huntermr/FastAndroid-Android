@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linTab" android:background="@color/color_bg_gry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffb52221" android:id="@id/tab_bt0" android:text="标题1" style="@style/product_detail_tabs" />
+        <Button android:id="@id/tab_bt1" android:text="标题2" style="@style/product_detail_tabs" />
+        <Button android:id="@id/tab_bt2" android:text="标题3" style="@style/product_detail_tabs" />
+        <Button android:id="@id/tab_bt3" android:text="标题4" style="@style/product_detail_tabs" />
+        <Button android:id="@id/tab_bt4" android:text="评价" style="@style/product_detail_tabs" />
+        <Button android:id="@id/tab_bt5" android:text="提问" style="@style/product_detail_tabs" />
+    </LinearLayout>
+</merge>

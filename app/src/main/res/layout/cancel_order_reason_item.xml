@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relHead" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/textCancelReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="jfl;sfkds" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imgSubmitOrderOk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/img_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/line1" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

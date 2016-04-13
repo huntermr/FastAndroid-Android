@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textSingleTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于" android:layout_centerInParent="true" style="@style/top_title" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/relShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/share_btn" style="@style/title_action_button" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:background="@drawable/about_up_shape" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0">
+            <ImageView android:id="@id/img_logo" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginTop="96.0dip" android:src="@drawable/about_logo" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff989898" android:id="@id/txt_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="扫描二维码，推荐朋友下载凡客客户端" android:layout_below="@id/img_logo" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff989898" android:id="@id/txt_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="96.0dip" android:text="©  2007-2016" android:layout_below="@id/txt_weixin" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff989898" android:id="@id/txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="凡客诚品（北京）科技有限公司" android:layout_below="@id/txt_year" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff3d3d3d" android:gravity="center" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_client_ver" android:layout_below="@id/imageView1" android:layout_alignLeft="@id/txt_year" android:layout_alignRight="@id/txt_year" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/vancl_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff3d3d3d" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_checkvision" android:background="@drawable/about_btn_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="15.0dip" android:text="检查更新" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

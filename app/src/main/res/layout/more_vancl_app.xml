@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_title" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多应用" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/list" android:padding="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" />
+</LinearLayout>

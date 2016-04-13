@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+                <ImageView android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ProgressBar android:id="@id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff676767" android:id="@id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtChannel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

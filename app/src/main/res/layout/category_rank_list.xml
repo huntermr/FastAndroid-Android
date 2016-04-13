@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/relCategoryTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="精品排行" android:layout_centerVertical="true" style="@style/top_title" />
+        </RelativeLayout>
+        <ImageView android:id="@id/progressBar" android:background="@anim/progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:id="@id/listCategory" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/relCategoryTop" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/textPromty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无排行榜" android:layout_centerInParent="true" />
+    <include layout="@layout/default_logo" />
+</RelativeLayout>

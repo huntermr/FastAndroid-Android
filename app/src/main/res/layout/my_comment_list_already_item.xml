@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="108.0dip">
+        <FrameLayout android:id="@id/relImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center" android:background="@drawable/rank_detile_pic_down_bg" android:layout_width="84.0dip" android:layout_height="84.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/imageIcon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/textName" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称xxx" android:singleLine="true" android:layout_toRightOf="@id/relImage" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textTime" android:paddingLeft="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论日期:xxx xxx xxx" android:layout_toRightOf="@id/relImage" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/text1" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="综合评分:" android:layout_toRightOf="@id/relImage" android:layout_above="@id/textTime" />
+        <RatingBar android:id="@id/ratingStar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" android:layout_toRightOf="@id/text1" android:layout_above="@id/textTime" style="@style/pinfenRatingBar" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textTitle" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/textContent" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="2.0dip" android:layout_below="@id/relComment" />
+</LinearLayout>

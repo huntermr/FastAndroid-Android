@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:background="@drawable/bg_up" android:layout_width="300.0dip" android:layout_height="34.0dip" android:text="分享" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_down" android:layout_width="300.0dip" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lin_weixin" android:background="@anim/list_selector" android:layout_width="fill_parent" android:layout_height="47.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/weixinlogo" />
+                <Button android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/btn_weixi" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="@string/share_weixin" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.vancl.custom.CustomLineView android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lin_weixin_pyq" android:background="@anim/list_selector" android:layout_width="fill_parent" android:layout_height="47.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/weixinsharelogo" />
+                <Button android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/btn_weixin_pyq" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="@string/share_weixin_pyq" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.vancl.custom.CustomLineView android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lin_sina" android:background="@anim/list_selector" android:layout_width="fill_parent" android:layout_height="47.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/sinalogo" />
+                <Button android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/btnSendSinaTwitter" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="分享到新浪微博" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

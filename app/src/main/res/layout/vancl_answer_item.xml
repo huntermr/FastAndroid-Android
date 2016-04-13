@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/question" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="14.0dip">
+        <ImageView android:id="@id/question_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/user_question" android:layout_alignParentRight="true" />
+        <RelativeLayout android:background="@anim/answer_selector" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/question_img" android:layout_alignTop="@id/question_img">
+            <TextView android:textSize="16.0sp" android:textColor="#ff2d2d2d" android:id="@id/question_content" android:paddingLeft="6.0dip" android:paddingRight="22.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/question_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/question_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/answer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="14.0dip">
+        <ImageView android:id="@id/answer_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/customer_service" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:background="@anim/question_selector" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/answer_img" android:layout_alignTop="@id/answer_img">
+            <ImageView android:id="@id/answer_content_image" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="132.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff2d2d2d" android:id="@id/answer_content" android:paddingLeft="22.0dip" android:paddingRight="12.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/answer_content_image" android:lineSpacingExtra="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/answer_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/answer_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

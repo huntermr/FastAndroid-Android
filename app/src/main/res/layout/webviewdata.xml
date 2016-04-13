@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/size_data_title" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无内容" />
+    <WebView android:id="@id/webviewSizeData" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

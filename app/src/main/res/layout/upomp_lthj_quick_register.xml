@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/upomp_lthj_scrollview_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_padding"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_info_layout">
+            <com.unionpay.upomp.lthj.widget.LineFrameView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_user_icon" android:text="@string/upomp_lthj_quick_reg_prompt" />
+        </LinearLayout>
+        <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_username_view" android:background="@drawable/upomp_lthj_info_frame" android:text="@string/upomp_lthj_username" android:hint="@string/upomp_lthj_input_char_hint" style="@style/upomp_lthj_comstominput" />
+        <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_password_edit" android:text="@string/upomp_lthj_loginpwd" android:hint="@string/upomp_lthj_input_char_hint" style="@style/upomp_lthj_comstominput" />
+        <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_confirm_pwd_input" android:text="@string/upomp_lthj_confirm_pwd" android:hint="@string/upomp_lthj_input_char_hint" style="@style/upomp_lthj_comstominput" />
+        <RelativeLayout style="@style/upomp_lthj_comstominput">
+            <CheckBox android:textSize="@dimen/upomp_lthj_lineframe_textsize" android:textColor="@drawable/upomp_lthj_text_black" android:id="@id/upomp_lthj_user_pro_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="true" android:button="@drawable/upomp_lthj_checkbox" android:text="同意" android:layout_centerVertical="true" />
+            <Button android:id="@id/upomp_lthj_reg_pro_btn" android:text="用户协议" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_verifycode_btn" />
+        </RelativeLayout>
+        <Button android:id="@id/upomp_lthj_next_btn" android:text="@string/upomp_lthj_reg_now" style="@style/upomp_lthj_button_big_single" />
+    </LinearLayout>
+</ScrollView>

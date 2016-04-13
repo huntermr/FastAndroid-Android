@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relMain" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="89.0dip" android:text="正在加载...." />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/relLoading">
+        <LinearLayout android:orientation="horizontal" android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/back_layout" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lin_search" android:background="@drawable/search_bg" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/img_home_search_icon" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="点击搜索店铺内商品" android:singleLine="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@id/relNineSingle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageNineSingle" android:src="@drawable/nine_grid_browse" android:layout_centerInParent="true" style="@style/title_action_button" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@id/relFilterIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:id="@id/filterImg" android:src="@drawable/filter_btn" android:layout_centerInParent="true" style="@style/title_action_button" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+        <RelativeLayout android:gravity="center_vertical" android:background="#ffdee1e7" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <ImageView android:id="@id/img_storepic" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/store_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:id="@id/txt_storename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/img_storepic" android:layout_alignParentTop="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff0762b6" android:id="@id/txt_storetotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/img_storepic" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/title_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/newGoods" android:background="@drawable/productlist_tab_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/newProductLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新品" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:id="@id/salesVolume" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/salesVolumeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销量" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:id="@id/price" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/priceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:id="@id/praise" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/praiseLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评" android:drawablePadding="3.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/relLogo" layout="@layout/default_logo" />
+            <GridView android:gravity="center" android:id="@id/gridSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="#fff3f4f6" android:numColumns="2" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rrblank" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fraTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:gravity="center_vertical" android:layout_gravity="center" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="写评论 " android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/llCommit" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textCommit" android:background="@anim/red_green_button" android:layout_width="142.0dip" android:layout_height="38.0dip" android:text="发表评论" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llCommit">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:background="@drawable/filter_bg_small" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="评论" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="14.0sp" android:gravity="top" android:id="@id/editContent" android:background="@anim/edittext_focused_selector" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="144.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:hint="请输入评论内容(必填)" android:maxLength="200" />
+                <ImageView android:id="@id/iveditContent" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/clear_edit" android:layout_alignRight="@id/editContent" android:layout_alignBottom="@id/editContent" />
+                <TextView android:id="@id/editContentCount" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200" android:layout_alignRight="@id/editContent" android:layout_alignBottom="@id/editContent" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:background="@drawable/filter_bg_small" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="打分" />
+            <ListView android:id="@id/listCommentItems" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@anim/list_selector" android:cacheColorHint="#00000000" android:divider="#ffdddddd" android:dividerHeight="1.0px" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

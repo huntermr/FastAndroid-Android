@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="购买商品" android:layout_centerInParent="true" style="@style/top_title" />
+        <TextView android:id="@id/txt_next" android:text="下一步" style="@style/title_right_text_button" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:text="选择尺码:" />
+                <LinearLayout android:orientation="vertical" android:id="@id/linRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/textBuyCountTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:text="数量:" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linBuyHead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/btnAdd" android:background="@anim/sub_num_button" android:layout_width="32.0dip" android:layout_height="32.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_jian" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <EditText android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/editBuyCount" android:background="@drawable/shoppingcart_middle" android:layout_width="40.0dip" android:layout_height="32.0dip" android:singleLine="true" android:maxLength="3" android:numeric="integer" android:imeOptions="actionDone" />
+                <RelativeLayout android:id="@id/btnDel" android:background="@anim/add_num_button" android:layout_width="32.0dip" android:layout_height="32.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_jia" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

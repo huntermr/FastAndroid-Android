@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/upomp_lthj_scrollview_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_padding"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/upomp_lthj_quickpay_userinfo" />
+        <RelativeLayout android:gravity="center_vertical" style="@style/upomp_lthj_info_layout">
+            <com.unionpay.upomp.lthj.widget.LineFrameView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_card_icon" android:text="@string/upomp_lthj_no_bind" />
+            <ImageButton android:id="@id/upomp_lthj_refrush_btn" android:src="@drawable/upomp_lthj_refresh_icon" android:layout_alignParentRight="true" style="@style/upomp_lthj_lineframe_icon" />
+        </RelativeLayout>
+        <Button android:id="@id/upomp_lthj_next_btn" android:text="@string/upomp_lthj_bind_now" style="@style/upomp_lthj_button_big_single" />
+    </LinearLayout>
+</ScrollView>

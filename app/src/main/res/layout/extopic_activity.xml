@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专题" android:layout_centerInParent="true" style="@style/top_title" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/relTitle" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rel_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relTitle">
+        <LinearLayout android:orientation="vertical" android:id="@id/lin_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/img_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_praise" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/img_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/praise_button" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffad1f24" android:id="@id/txt_praisecount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

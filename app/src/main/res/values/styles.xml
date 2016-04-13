@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="upomp_lthj_layout_width_height_ff">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="upomp_lthj_layout_width_height_fw">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_layout_width_height_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_layout_width_height_wf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="upomp_lthj_layout_padding">
+        <item name="android:paddingLeft">@dimen/upomp_lthj_pad_left</item>
+        <item name="android:paddingTop">@dimen/upomp_lthj_pad_top</item>
+        <item name="android:paddingRight">@dimen/upomp_lthj_pad_right</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="upomp_lthj_input_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/upomp_lthj_input_bg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/upomp_lthj_margin_bottom</item>
+    </style>
+    <style name="upomp_lthj_input_edittext" parent="@style/upomp_lthj_layout_width_height_ff">
+        <item name="android:textSize">@dimen/upomp_lthj_lineframe_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_text_black</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="upomp_lthj_info_layout" parent="@style/upomp_lthj_layout_width_height_fw">
+        <item name="android:background">@drawable/upomp_lthj_info_frame</item>
+        <item name="android:layout_marginBottom">@dimen/upomp_lthj_margin_bottom</item>
+    </style>
+    <style name="upomp_lthj_info_textview" parent="@style/upomp_lthj_layout_width_height_ww">
+        <item name="android:textSize">@dimen/upomp_lthj_lineframe_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_text_black</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="upomp_lthj_about_textview" parent="@style/upomp_lthj_layout_width_height_ww">
+        <item name="android:textSize">@dimen/upomp_lthj_lineframe_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_about_text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="upomp_lthj_about_item" parent="@style/upomp_lthj_layout_width_height_ww">
+        <item name="android:layout_marginBottom">0.0dip</item>
+    </style>
+    <style name="upomp_lthj_tablelayout">
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_tablerow">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_input_help_btn">
+        <item name="android:background">@drawable/upomp_lthj_input_help_btn</item>
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="upomp_lthj_verifycode_btn">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_button_verifycode</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+    </style>
+    <style name="upomp_lthj_button_big_single">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@drawable/upomp_lthj_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_button_blue</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/upomp_lthj_margin_bottom</item>
+    </style>
+    <style name="upomp_lthj_comstominput">
+        <item name="android:background">@drawable/upomp_lthj_input_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/upomp_lthj_margin_bottom</item>
+    </style>
+    <style name="upomp_lthj_rowline">
+        <item name="android:background">@drawable/upomp_lthj_row_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_light_blue_btn">
+        <item name="android:textSize">@dimen/upomp_lthj_small_button_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_text_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_button_lightblue</item>
+        <item name="android:layout_width">75.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="upomp_lthj_watermark">
+        <item name="android:layout_width">255.0dip</item>
+        <item name="android:layout_height">53.0dip</item>
+        <item name="android:src">@drawable/upomp_lthj_watermark</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="upomp_lthj_dialog_content">
+        <item name="android:background">@null</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="upomp_lthj_dialog_icon">
+        <item name="android:layout_width">38.0dip</item>
+        <item name="android:layout_height">38.0dip</item>
+    </style>
+    <style name="upomp_lthj_dialog_button">
+        <item name="android:textSize">@dimen/upomp_lthj_lineframe_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_dialog_ok_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_button_lightblue</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35.0dip</item>
+    </style>
+    <style name="upomp_lthj_drop_button">
+        <item name="android:background">@drawable/upomp_lthj_button_drop</item>
+        <item name="android:layout_width">35.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="upomp_lthj_common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/upomp_lthj_info_frame</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="upomp_lthj_button_light_blue">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@drawable/upomp_lthj_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_button_lightblue</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/upomp_lthj_margin_bottom</item>
+    </style>
+    <style name="upomp_lthj_right_arrows">
+        <item name="android:background">@drawable/upomp_lthj_rightarrow_icon</item>
+        <item name="android:layout_width">10.0dip</item>
+        <item name="android:layout_height">10.0dip</item>
+        <item name="android:layout_marginRight">40.0dip</item>
+    </style>
+    <style name="upomp_lthj_lineframe_icon">
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/upomp_lthj_lineframe_image_pad</item>
+        <item name="android:layout_width">@dimen/upomp_lthj_lineframe_image_w</item>
+        <item name="android:layout_height">@dimen/upomp_lthj_lineframe_h</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="upomp_lthj_scrollview_big">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="upomp_lthj_keyboard_radio">
+        <item name="android:textColor">@drawable/upomp_lthj_text_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/upomp_lthj_keybtn</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="upomp_lthj_keyboard_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/upomp_lthj_filled_box</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="upomp_lthj_dialog_tv">
+        <item name="android:textSize">@dimen/upomp_lthj_lineframe_textsize</item>
+        <item name="android:textColor">@drawable/upomp_lthj_text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upomp_lthj_dialog">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">310.0dip</item>
+        <item name="android:layout_height">182.0dip</item>
+    </style>
+    <style name="upomp_lthj_checkbox">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/upomp_lthj_checkbox</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="AnimationActivity">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+    </style>
+    <style name="Animation">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="pinfenRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxWidth">18.0dip</item>
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:progressDrawable">@drawable/pinfen_star</item>
+        <item name="android:minWidth">18.0dip</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/whitepoint</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="style_16_FFFFFF_BOLD">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="style_15_EBEBEB_BOLD">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffebebeb</item>
+    </style>
+    <style name="style_18_C21513_BOLD">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffc21513</item>
+    </style>
+    <style name="style_16_666666">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="style_15_666666">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="style_17_666666">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="MyGallery">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:spacing">-20.0dip</item>
+        <item name="android:unselectedAlpha">0.85</item>
+    </style>
+    <style name="BackgroundNoBlack" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@drawable/app</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="title_action_button">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+    </style>
+    <style name="top_title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <style name="title_right_text_button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="right_text_button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@anim/title_button_right_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="left_text_button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@anim/title_button_left_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="product_detail_tabs">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="theme_fullScreen" parent="@android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="NotificationText" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Theme.Startup" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="VanclExpandListView" />
+    <style name="Transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox</item>
+    </style>
+    <style name="btn_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/button_text_color_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">36.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

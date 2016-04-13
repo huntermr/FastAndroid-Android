@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relProductItem" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relImage" android:layout_width="84.0dip" android:layout_height="84.0dip">
+            <ImageView android:background="@drawable/rank_detile_pic_down_bg" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/img_product" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/textProductName" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="3" android:layout_weight="1.0" />
+            <LinearLayout android:id="@id/linCountType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textProductName">
+                <TextView android:textSize="12.0sp" android:textColor="#ffa5a5a5" android:id="@id/textColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa5a5a5" android:gravity="center" android:id="@id/textProductSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linActionCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linCountType">
+                <TextView android:textColor="#ff666666" android:paddingLeft="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="激活码：" android:singleLine="true" />
+                <TextView android:textColor="#ff666666" android:id="@id/textActionCode" android:paddingLeft="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ffd00d00" android:id="@id/textProductPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa5a5a5" android:id="@id/textBuyCounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textProductPrice" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

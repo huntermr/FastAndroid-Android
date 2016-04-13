@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fraTitle" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/biaoti_color_txt" android:gravity="center_vertical" android:layout_gravity="center" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="写评论 " style="@style/top_title" />
+    </FrameLayout>
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fraTitle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:background="@drawable/filter_bg_small" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打分" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relAll" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="综合" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageArrow1" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RatingBar android:id="@id/ratingAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" android:layout_toLeftOf="@id/imageArrow1" android:layout_centerVertical="true" style="@style/pinfenRatingBar" />
+            </RelativeLayout>
+            <include layout="@layout/devideline_fafafa" />
+            <RelativeLayout android:id="@id/relView" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="外观" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageArrow2" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RatingBar android:id="@id/ratingView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" android:layout_toLeftOf="@id/imageArrow2" android:layout_centerVertical="true" style="@style/pinfenRatingBar" />
+            </RelativeLayout>
+            <include layout="@layout/devideline_fafafa" />
+            <RelativeLayout android:id="@id/relComfort" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="舒适度" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageArrow3" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RatingBar android:id="@id/ratingComfort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:isIndicator="true" android:layout_toLeftOf="@id/imageArrow3" android:layout_centerVertical="true" style="@style/pinfenRatingBar" />
+            </RelativeLayout>
+            <include layout="@layout/devideline_fafafa" />
+            <RelativeLayout android:id="@id/relSize" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尺码" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageArrow4" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="合适" android:layout_toLeftOf="@id/imageArrow4" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:background="@drawable/filter_bg_small" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" />
+            <EditText android:textSize="14.0sp" android:id="@id/editTitle" android:background="@anim/edittext_focused_selector" android:padding="5.0dip" android:layout_width="290.0dip" android:layout_height="39.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:hint="请输入评论标题（选填）" android:maxLength="50" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留言" />
+            <EditText android:textSize="14.0sp" android:gravity="center|left|top" android:id="@id/editContent" android:background="@anim/edittext_focused_selector" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="144.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:hint="请输入评论内容" android:maxLength="150" />
+            <RelativeLayout android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textCommit" android:background="@anim/red_green_button" android:layout_width="142.0dip" android:layout_height="38.0dip" android:text="发表评论" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

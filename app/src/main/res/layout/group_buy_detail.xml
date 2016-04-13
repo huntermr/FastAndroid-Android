@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include1" layout="@layout/group_buy_detail_head" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linBackGround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+</RelativeLayout>

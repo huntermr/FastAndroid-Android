@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@id/RelativeLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/biaoti_color">
+
+        <LinearLayout
+            android:id="@id/bottomMainTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@id/linearLayout1"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.99"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/biaoti_color"
+                    android:drawableTop="@drawable/index"
+                    android:text="首页"
+                    android:textColor="@color/biaoti_color_txt"
+                    android:textSize="@dimen/indicator_right_padding" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/LinearLayout02"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/biaoti_color"
+                    android:drawableTop="@drawable/category"
+                    android:text="分类"
+                    android:textColor="@color/biaoti_color_txt"
+                    android:textSize="@dimen/indicator_right_padding" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/biaoti_color"
+                    android:drawableTop="@drawable/activity"
+                    android:text="活动"
+                    android:textColor="@color/biaoti_color_txt"
+                    android:textSize="@dimen/indicator_right_padding" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/linearLayout2"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@id/button5"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/biaoti_color"
+                        android:drawableTop="@drawable/buycar"
+                        android:text="购物车"
+                        android:textColor="@color/biaoti_color_txt"
+                        android:textSize="@dimen/indicator_right_padding" />
+
+                    <TextView
+                        android:id="@id/shopCarNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@id/button5"
+                        android:background="@drawable/product_detail_shopcart_tip"
+                        android:gravity="center"
+                        android:paddingRight="2.0dip"
+                        android:textColor="#ffffffff"
+                        android:textSize="8.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/biaoti_color"
+                    android:drawableTop="@drawable/my"
+                    android:text="我的"
+                    android:textColor="@color/biaoti_color_txt"
+                    android:textSize="@dimen/indicator_right_padding" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/contents_line_gray" />
+    </RelativeLayout>
+</merge>

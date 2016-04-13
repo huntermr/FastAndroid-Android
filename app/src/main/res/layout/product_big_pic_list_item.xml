@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="322.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/relComment" android:layout_width="fill_parent" android:layout_height="320.0dip">
+        <ImageView android:id="@id/imaProductBig" android:layout_width="fill_parent" android:layout_height="320.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/line1" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relComment" />
+</RelativeLayout>

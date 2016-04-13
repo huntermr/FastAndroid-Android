@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/filterRadioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/allRadio" android:paddingLeft="30.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="全部商品" android:drawableRight="@android:drawable/btn_radio" />
+        <RadioButton android:id="@id/vanclRadio" android:paddingLeft="30.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="凡客自营" android:drawableRight="@android:drawable/btn_radio" />
+        <RadioButton android:id="@id/xianshiRadio" android:paddingLeft="30.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="限时特卖" android:drawableRight="@android:drawable/btn_radio" />
+    </RadioGroup>
+    <ListView android:id="@id/filterFirst" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

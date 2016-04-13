@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textColor="@color/biaoti_color_txt" android:gravity="center" android:id="@id/textTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="活动" android:layout_centerVertical="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/activityForHomeWeb" android:layout_width="fill_parent" android:layout_height="370.0dip" android:layout_weight="0.28" />
+    <include layout="@layout/bottom_main" />
+</LinearLayout>

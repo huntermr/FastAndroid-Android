@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:paddingTop="10.0dip" android:layout_width="296.0dip" android:layout_height="296.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="296.0dip" android:layout_height="296.0dip">
+        <ImageView android:layout_gravity="center" android:background="@drawable/nine_grid_single_down" android:layout_width="296.0dip" android:layout_height="304.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/imgSingle" android:layout_width="284.0dip" android:layout_height="284.0dip" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/imgBelongType" android:background="@drawable/list_v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom|center" android:background="@drawable/subtransparent" android:layout_width="284.0dip" android:layout_height="46.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/textSingleName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textSingleNew" android:background="@drawable/nine_grid_single_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新品" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffff7800" android:id="@id/textSingleSellName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="售价:￥" android:layout_below="@id/textSingleName" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffff7800" android:id="@id/textSingleSellPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="68.00" android:layout_toRightOf="@id/textSingleSellName" android:layout_below="@id/textSingleName" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:gravity="top" android:id="@id/textSinglePrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:text="" android:layout_toRightOf="@id/textSingleSellPrice" android:layout_below="@id/textSingleName" />
+    </RelativeLayout>
+</FrameLayout>

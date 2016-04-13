@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frmProductImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_pic_bg" />
+        <ImageView android:layout_gravity="center" android:id="@id/imgProduct" android:layout_width="116.0dip" android:layout_height="116.0dip" android:scaleType="fitXY" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/frmProductImage" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffcc3647" android:id="@id/textVanclPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="售价:￥100.00" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/textShopPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:minLines="1" android:singleLine="true" android:layout_below="@id/textVanclPrice" />
+    </RelativeLayout>
+</RelativeLayout>

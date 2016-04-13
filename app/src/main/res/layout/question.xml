@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="疑难提问" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relTitle">
+        <ListView android:id="@id/listProductQuestions" android:visibility="gone" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@anim/list_selector" android:cacheColorHint="#fff3f4f6" android:divider="@null" />
+    </RelativeLayout>
+    <include android:id="@id/include1" layout="@layout/default_logo" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff3a3c3f" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fraTitle" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/filter_font_color_default" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="筛选" android:layout_centerVertical="true" style="@style/top_title" />
+        <ImageView android:id="@id/filterBtnOk" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/filter_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/filterBtnDelete" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/filter_delete" android:layout_toLeftOf="@id/filterBtnOk" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ExpandableListView android:id="@id/listFilter" android:background="#ff3a3c3f" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#00ffffff" android:divider="#00ffffff" android:layout_below="@id/fraTitle" android:overScrollFooter="@null" />
+</RelativeLayout>

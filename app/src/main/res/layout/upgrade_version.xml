@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imglogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:src="@drawable/about_logo" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/imglogo" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff666666" android:gravity="center" android:id="@id/textVersionMsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ProgressBar android:id="@id/progressBar" android:layout_width="280.0dip" android:layout_height="10.0dip" android:layout_marginTop="25.0dip" android:max="100" android:progress="0" android:progressDrawable="@anim/progressbar_color" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/textProgressRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0% 0KB/0KB" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@anim/shopcar_product_list_bg_left_bottom_press" />
+    <item android:state_pressed="false" android:drawable="@anim/shopcar_product_list_bg_left_bottom_nol" />
+</selector>

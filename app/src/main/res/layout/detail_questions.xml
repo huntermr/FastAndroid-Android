@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/quanquan2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/loading_icon" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linQuestions" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_txt_black" android:gravity="center_vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/question_edit_title" />
+            <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <EditText android:textSize="14.0sp" android:gravity="top" android:id="@id/qcon" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="230.0dip" android:hint="请输入您的问题,字数在60字以内" android:layout_alignParentTop="true" />
+                <TextView android:id="@id/textWordCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="0/60" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/send" android:background="@anim/btn_selector" android:layout_width="119.0dip" android:layout_height="35.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="提交" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:background="#ffd2d9de" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="疑难问题" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff777777" android:gravity="center_vertical" android:id="@id/txetNoQues" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="此商品暂无疑难问题，快来提问吧" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linForQuestionList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textIsNoData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:text="暂无疑难问题" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linNoDataTry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textNoData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:text="数据请求失败,请重试" />
+            <Button android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/btnTryQuestion" android:background="@anim/single_button_selector" android:layout_width="144.0dip" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="重试" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linUserQuestion" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linQuestions">
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnMyQuestion" android:background="@anim/green_red_button" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginRight="5.0dip" android:text="咨询提问" />
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnQuestionsCommit" android:background="@anim/product_addshopcart_button" android:layout_width="144.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:text="查看更多提问" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

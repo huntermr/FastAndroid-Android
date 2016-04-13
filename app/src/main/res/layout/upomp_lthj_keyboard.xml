@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/upomp_lthj_keyboard_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_keyboard" />
+        <TextView android:textSize="18.0dip" android:textColor="@drawable/upomp_lthj_white" android:id="@id/upomp_lthj_keyboard_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upomp_lthj_keyboard_title" />
+    </LinearLayout>
+    <EditText android:id="@id/upomp_lthj_keyboard_editText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:editable="false">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/upomp_lthj_keypad_back" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/upomp_lthj_keyboard_layoutRight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RadioButton android:id="@id/upomp_lthj_keyboard_buttonLetter" android:text="@string/upomp_lthj_letter" android:layout_weight="1.0" style="@style/upomp_lthj_keyboard_radio" />
+                <RadioButton android:id="@id/upomp_lthj_keyboardButtonNum" android:text="@string/upomp_lthj_num" android:layout_weight="1.0" style="@style/upomp_lthj_keyboard_radio" />
+                <RadioButton android:id="@id/upomp_lthj_keyboard_buttonSign" android:text="@string/upomp_lthj_sign" android:layout_weight="1.0" style="@style/upomp_lthj_keyboard_radio" />
+            </RadioGroup>
+            <Button android:id="@id/upomp_lthj_button_cancel" android:background="@drawable/upomp_lthj_keybtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/upomp_lthj_str_no" android:layout_weight="2.0" />
+            <Button android:id="@id/upomp_lthj_keyboard_buttonOK" android:background="@drawable/upomp_lthj_keybtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/upomp_lthj_str_ok" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

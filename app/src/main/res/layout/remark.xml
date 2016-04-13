@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <include layout="@layout/back_layout" />
+        <TextView android:id="@id/textCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单备注" android:layout_centerInParent="true" style="@style/top_title" />
+        <TextView android:id="@id/txtSure" android:text="确定" style="@style/title_right_text_button" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:background="@anim/myacount_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="left" android:id="@id/editRemark" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:minHeight="128.0dip" android:hint="此处请勿填写有关配送、支付等方面的信息。留言请在50字以内" android:maxLength="50" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relGiftCardHead" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/back_layout" />
+            </LinearLayout>
+            <TextView android:text="礼品卡" android:layout_centerInParent="true" style="@style/top_title" />
+            <TextView android:id="@id/txt_addgift" android:text="添加" style="@style/title_right_text_button" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linTab" android:background="@drawable/list_tab_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relTitle">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/textCanUse" android:background="@drawable/productlist_tab_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="12.0dip" android:text="可用礼品卡" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/textUsed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="已用礼品卡" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/textOutTime" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="12.0dip" android:text="过期礼品卡" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linTab">
+            <ListView android:id="@id/listGiftCard" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/textNoGift" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="暂无礼品卡" android:layout_below="@id/linTab" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

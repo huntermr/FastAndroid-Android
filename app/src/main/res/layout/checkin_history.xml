@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="签到历史" android:layout_centerVertical="true" style="@style/top_title" />
+    </RelativeLayout>
+    <ListView android:id="@id/lvCheckinHistory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00ffffff" android:cacheColorHint="#fff3f4f6" android:divider="#00ffffff" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+    </RelativeLayout>
+</LinearLayout>

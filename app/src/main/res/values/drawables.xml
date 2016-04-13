@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="upomp_lthj_white">#ffffffff</item>
+    <item type="drawable" name="upomp_lthj_gray">#ff585858</item>
+    <item type="drawable" name="upomp_lthj_text_black">#ff000000</item>
+    <item type="drawable" name="upomp_lthj_text_blue">#ff5a6e84</item>
+    <item type="drawable" name="upomp_lthj_background">#ffbdcedf</item>
+    <item type="drawable" name="upomp_lthj_red">#ffff0000</item>
+    <item type="drawable" name="upomp_lthj_green">#ff09416e</item>
+    <item type="drawable" name="upomp_lthj_keypad_back">#ff5a6371</item>
+    <item type="drawable" name="upomp_lthj_dialog_ok_color">#ff09416e</item>
+    <item type="drawable" name="upomp_lthj_dialog_no_color">#ff929ca8</item>
+    <item type="drawable" name="upomp_lthj_button_select_color">#665aa6bc</item>
+    <item type="drawable" name="upomp_lthj_line_color">#ffa6b4c3</item>
+    <item type="drawable" name="upomp_lthj_about_text_color">#ff0d3d71</item>
+</resources>

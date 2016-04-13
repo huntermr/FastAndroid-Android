@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:background="@drawable/bg_title" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="写评论 " style="@style/top_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textSize="14.0sp" android:gravity="center|left|top" android:id="@id/editContent" android:background="@anim/edittext_focused_selector" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="144.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:hint="请输入评论内容" android:maxLength="150" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textCommit" android:background="@anim/red_green_button" android:layout_width="142.0dip" android:layout_height="38.0dip" android:layout_marginTop="20.0dip" android:text="发表评论" android:layout_centerInParent="true" />
+    </LinearLayout>
+</LinearLayout>

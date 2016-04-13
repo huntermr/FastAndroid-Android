@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relComment" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="@anim/list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relImage" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <ImageView android:background="@drawable/rank_detile_pic_down_bg" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/imgGroupProductIcon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relContent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/textProductName" android:layout_width="175.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="商品名称" android:singleLine="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/textProductConsignee" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="收货人：吕品" android:singleLine="true" android:layout_below="@id/textProductName" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/textBuyNumber" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="购买数量：12件" android:singleLine="true" android:layout_toRightOf="@id/textProductConsignee" android:layout_alignTop="@id/textProductConsignee" />
+                <TextView android:textColor="#ff333333" android:ellipsize="end" android:id="@id/textTime" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="参团时间：2011-10-11" android:singleLine="true" android:layout_below="@id/textProductConsignee" />
+                <Button android:textColor="#ffffffff" android:id="@id/btnCancelGroup" android:background="@drawable/item_button" android:focusableInTouchMode="false" android:layout_width="75.0dip" android:layout_height="25.0dip" android:layout_marginTop="2.0dip" android:text="取消参团" android:layout_below="@id/textTime" />
+                <TextView android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/btnCancelGroup" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/line1" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relComment" />
+</RelativeLayout>

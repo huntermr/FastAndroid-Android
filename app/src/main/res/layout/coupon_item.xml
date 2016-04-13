@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/textCouponNo" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="卡　号：" android:singleLine="true" />
+    <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/textCouponPwd" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="密　码：" android:singleLine="true" />
+    <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/textExpireTime" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="有效期：" android:singleLine="true" />
+    <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/textStatus" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="状　态：" android:singleLine="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/textRemarks" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="备　注：" />
+</LinearLayout>

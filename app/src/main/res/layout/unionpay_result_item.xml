@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relContent" android:layout_width="290.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/edittext_bg" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linNumberLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textOrderNumberHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付编号：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textOrderNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 1288126371623812" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line1" android:background="@drawable/devideline_fafafa" android:layout_width="290.0dip" android:layout_height="1.0dip" android:layout_below="@id/linNumberLayout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linMoneyLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line1">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textOrderPriceHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付金额：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textPaymentAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

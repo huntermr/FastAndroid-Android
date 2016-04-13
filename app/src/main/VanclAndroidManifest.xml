@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vancl.activity"
+    platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.ut.permission.DEVICE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc.hce" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <permission android:name="com.vancl.activity.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="com.vancl.activity.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application android:name="com.vancl.vancl.activity.VanclApplication" android:icon="@drawable/icon"
+        android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.vancl.pullinfo.HeadNullActivity" android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.WelcomeActivity" android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" android:theme="@style/Theme.Startup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vancl.vancl.activity.VanclMainPage" android:configChanges="keyboard|keyboardHidden"
+            android:exported="false" android:launchMode="singleTask"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vancl.vancl.activity.demo.HomeActivityTest"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.HomeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" android:theme="@style/Transparent" />
+        <activity android:name="com.vancl.vancl.activity.NineGridBrowseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.NineGridSingleActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.PanicBuyListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ActivityForHomeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.PanicBuyProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ProductZoomPicActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SearchActivity"
+            android:screenOrientation="portrait" android:theme="@style/Transparent"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name="com.vancl.vancl.activity.ProductListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SecondKillListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SecondKillProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.VanclPopDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.VanclPopListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CategoryRankListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RankListDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SecondKillRuleActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.PanicBuyRuleActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.GroupBuyActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.GroupBuyDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.GroupBuyRuleActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.UpgradeVersionActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AccountsCenterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AccountsCenterOkActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".wxapi.WXPayEntryActivity" android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name="com.vancl.vancl.activity.AddressListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AddressManagerActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CategoryActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CategorysMainActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ProductGridActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.GiftCardActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.InvoiceActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ProductDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vancl.vancl.activity.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ShopcarActivity" android:configChanges="keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.vancl.vancl.activity.ShopcarTestActivity" android:configChanges="keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.vancl.vancl.activity.SinaLoginActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SinaReleaseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SplitOrderActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ChangePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CheckingGiftCardActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SmsRegisterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AccountsCenterGroupBuyOkActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.GroupProductSizeChoiceActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.FilterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RegisterEmailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.vancl.vancl.activity.RegisterChatActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.vancl.vancl.activity.WebViewActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.WebViewZhuantiActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MoreActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SettingActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyVanclActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AccountsCenterGroupBuyActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.SecondkillAccountsCenterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ShopCarStockoutActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.EditCommentActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.FavoriteActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyCommentsListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyOrderDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyOrderListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyGroupBuyActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RecentBrowseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.FeedbackActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ComplaintsSuggestionsActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.HelpDetailActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.HelpListActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MoreVanclAppActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AboutActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.DetailCommentActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.DetailQuestionActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.LogisticsInfoActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ZhiFuBaoMultiOrderPay"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ZhiFuBaoOrderSuccessPay"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.HomeNineBrowseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.QuestionEditActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.WebViewDataAactivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.DetailChoiceSizeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.vancl.vancl.activity.HotChannelWebViewActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CheckinActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CheckinHistoryActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CheckinRuleActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.qrclient.CaptureActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.activity.dataexp.DataExceptionActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.activity.bizexp.PanicBuyListBizErrorActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.activity.dataexp.ErrorActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CouponActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CanvasTakePhotoActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CanvasPublishActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.BalancePayPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.NineGridRecommendBrowseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MessageCenterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.VanclAnswerActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.VanclSystemInfoActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MsgCenTransitionPageActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CameraPicShareActvity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CameraPicPreviewActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.CameraLoginActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RenRenOAuthAuthorize"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ProductDetailZengActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.PromotionActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RenRenReleaseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.QQReleaseActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RegisterForGiftActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MsgBigImageActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.XianShiBuyActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.AddressSelectorActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.FCodeActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <service android:name="com.vancl.frame.TempService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.vancl.frame.TempService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.vancl.pullinfo.service.VanclService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.vancl.pullinfo.service.VanclService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.vancl.zhifubao.ZhiFuBaoServiceInstallReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.tencent.weibo.sdk.android.component.PublishActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.ConversationActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.FriendActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralDataShowActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.QQAuthorize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.VanclCenterActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.StoreListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.RemarkActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.MyOrderDetailInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vancl.vancl.activity.ExTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true"
+            android:label="@string/app_name" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true"
+            android:process=":pushservice" />
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.vancl.push.XiaoMiMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="4d22eb9c3ea7a3585000b831" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="vancl_m_001" />
+        <activity android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation" android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="keyboardHidden|navigation|orientation" android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name="com.vancl.activity.wxapi.WXEntryActivity" android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" />
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity" />
+    </application>
+</manifest>

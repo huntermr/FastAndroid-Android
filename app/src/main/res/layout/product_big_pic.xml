@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listProductBig" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#ffffffff" android:cacheColorHint="#ffffffff" android:divider="@null" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relProductBigTop" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/relBackIcon" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="42.0dip">
+            <ImageView android:id="@id/textProductBigTitleBack" android:background="@drawable/product_big_title_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imgLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toRightOf="@id/relBackIcon" />
+        <RelativeLayout android:id="@id/relShoppingIcon" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/textProductBigTitleShopping" android:background="@drawable/product_big_title_shopping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/imgShoppLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relShoppingIcon" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relBottom" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/textBottomName" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffff7800" android:id="@id/textBottomPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="6.0dip" android:layout_toRightOf="@id/textBottomName" />
+        <HorizontalScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linViewLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/linBackGround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

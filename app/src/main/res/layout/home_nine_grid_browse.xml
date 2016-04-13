@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/relMain" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relHead" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textClass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新品推荐" android:layout_centerInParent="true" style="@style/top_title" />
+        <RelativeLayout android:id="@id/relNineSingle" android:background="@anim/title_icon_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imageNineSingle" android:src="@drawable/nine_grid_browse" android:layout_centerInParent="true" style="@style/title_action_button" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relNineSingle" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relGrid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/relLoading" android:layout_below="@id/relHead">
+        <GridView android:gravity="center" android:id="@id/gridSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/list_selector" android:cacheColorHint="#fff3f4f6" android:horizontalSpacing="1.0dip" android:numColumns="2" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relLoading" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_below="@id/gridSmall" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="89.0dip" android:text="正在加载...." />
+    </RelativeLayout>
+    <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/upomp_lthj_pad_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/upomp_lthj_custominput_tv" android:layout_width="wrap_content" android:minEms="4" style="@style/upomp_lthj_info_textview" />
+    <EditText android:id="@id/upomp_lthj_custominput_et" android:paddingLeft="@dimen/upomp_lthj_lineframe_text_pad" style="@style/upomp_lthj_input_edittext" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="订单详情" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/ll_tuihuanhuo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/btn_tuihuanhuo" android:background="@anim/red_green_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="办理退换货" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_tuihuanhuo" android:layout_below="@id/relTitle">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+                <RelativeLayout android:gravity="center|left" android:id="@id/relTackingInfo" android:background="@anim/listitem_up_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textOrderTrackInfo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="物流信息" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center|left" android:id="@id/relOrderInfo" android:background="@anim/listitem_bottom_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textOrderDetails" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="订单信息" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@anim/listitem_up_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="left" android:layout_gravity="left" android:id="@id/textUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textUserPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffa5a5a5" android:id="@id/textUserDetailAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lin_delivertime" android:background="@anim/listitem_bottom_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="送货时间" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/textCanSendProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/relProductItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/lin_delivertime" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/relDefaultLogo" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relTitle">
+        <include android:id="@id/relLogo" layout="@layout/default_logo" />
+    </RelativeLayout>
+</RelativeLayout>

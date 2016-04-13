@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/topBg" android:background="@drawable/bg_title" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物车" android:layout_centerVertical="true" style="@style/top_title" />
+            <RelativeLayout android:id="@id/btnEditLayout" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="43.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/editBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shopcarNo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/shoppingcar_no" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffa2a6b1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的购物车中没有商品" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnFavorite" android:background="@anim/red_green_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我的收藏" android:layout_weight="1.0" />
+                <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnRecentBrowse" android:background="@anim/green_red_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="最近浏览" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/stockoutTip" android:background="@drawable/stockout_item_bg" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff494000" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您购物车部分商品已下架,请点击查看" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/stockout_tip_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shopcarContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.vancl.custom.CustomListView android:id="@id/shopcarListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@null" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="2.0px">
+                        <LinearLayout android:background="#ffbcc0c4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <LinearLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/additionLayout" android:background="#ffecf4ff" android:paddingLeft="16.0dip" android:paddingTop="3.0dip" android:paddingRight="16.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量总计：" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtTotalNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赠送积分总计：" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtIntegral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金额总计（不算运费）：" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtTotalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:background="#ffbcc0c4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <LinearLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                        <RelativeLayout android:id="@id/promotionLayout" android:background="@anim/yellow_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="买赠" />
+                                <TextView android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+                                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="全场特惠" android:layout_centerInParent="true" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/submitOrderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                            <ImageView android:id="@id/btnSubmitOrder" android:background="@anim/red_green_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_centerInParent="true" />
+                            <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去结算" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/discountsInfo" android:background="@drawable/discount_message_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView android:id="@id/guidPromotion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/relDefaultLogo" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="42.0dip">
+        <include android:id="@id/relLogo" layout="@layout/default_logo" />
+    </RelativeLayout>
+</RelativeLayout>

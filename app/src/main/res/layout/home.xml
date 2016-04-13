@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lin_mainContent" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="#ffb81b22" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip">
+            <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/searchbg" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/imageView1" android:paddingLeft="@dimen/indicator_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_search" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/btnHot" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/hotImage" android:layout_width="50.0dip" android:layout_height="44.0dip" android:src="@drawable/message_none_btn" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.vancl.custom.PagerSlidingTabStrip android:id="@id/tabs" android:background="@drawable/tab_back" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_below="@id/topBg" android:layout_alignBottom="@id/topBg" />
+    <com.vancl.custom.BeastViewPager android:id="@id/mainContent" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabs" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.vancl.custom.BeastViewPager>
+    <include layout="@layout/bottom_main" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

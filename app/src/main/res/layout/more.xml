@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/relInvoiceTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/back_layout" />
+            </LinearLayout>
+            <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_centerInParent="true" style="@style/top_title" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linDie" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/moregroup1" android:background="@anim/shape_rounded_rectangle_more" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:id="@id/relHotPot" android:background="@anim/list_selector_round_corner_up" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="投诉建议" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/devideline_fafafa" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/relPush" android:background="@anim/list_selector_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <ImageView android:id="@id/imgPushIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/push" android:layout_centerVertical="true" />
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="消息中心" android:layout_toRightOf="@id/imgPushIcon" android:layout_centerVertical="true" />
+                            <ImageView android:id="@id/new_tips" android:background="@drawable/new_message_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/devideline_fafafa" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/relComment" android:background="@anim/list_selector_round_corner_down" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="给我评分" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/moregroup2" android:background="@anim/shape_rounded_rectangle_more" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:id="@id/relPushSet" android:background="@anim/list_selector_round_corner_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="设置" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/relClearData" android:background="@anim/list_selector_round_corner_up" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="清除缓存" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/relQRCode" android:background="@anim/list_selector_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="二维码扫描" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <LinearLayout android:id="@id/line_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/devideline_fafafa" />
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/relIdea" android:background="@anim/list_selector_round_corner_down" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="更多应用" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/relUpgrade" android:background="@anim/list_selector_round_corner_down" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <ImageView android:id="@id/imgUpgradeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/about_icon4_middle" android:layout_centerVertical="true" />
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="检查更新" android:layout_toRightOf="@id/imgUpgradeIcon" android:layout_centerVertical="true" />
+                            <Button android:textColor="#ffffffff" android:id="@id/btnUpdate" android:background="@drawable/item_button" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="有更新" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/moregroup3" android:background="@anim/shape_rounded_rectangle_more" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                        <RelativeLayout android:id="@id/relSetting" android:background="@anim/list_selector_round_corner_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="设置" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/relAbout" android:background="@anim/list_selector_round_corner_all" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="关于" android:layout_centerVertical="true" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/server_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <WebView android:id="@id/webViewMore" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

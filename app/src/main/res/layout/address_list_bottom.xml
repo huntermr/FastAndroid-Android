@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewBottom" android:background="@anim/account_center_product_list_bg_bottom" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/viewBottom" />
+</RelativeLayout>

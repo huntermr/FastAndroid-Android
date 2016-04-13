@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑收货地址" android:layout_centerInParent="true" style="@style/top_title" />
+        <TextView android:id="@id/btnAddrSure" android:text="保存" style="@style/title_right_text_button" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/topBg" />
+    <ScrollView android:id="@id/scrollView" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@anim/shape_rounded_rectangle_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/edtName" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="收货人" android:inputType="textCapCharacters" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/devideline_fafafa" />
+                </LinearLayout>
+                <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/edtTelephone" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="手机号码" android:maxLength="11" android:inputType="phone" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/devideline_fafafa" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/btnAreaSel" android:background="@anim/list_selector_more" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txtArea" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="所在地区" android:singleLine="true" android:drawableRight="@drawable/jiantou" />
+                </RelativeLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/devideline_fafafa" />
+                </LinearLayout>
+                <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/edtDetailAddr" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="32.0dip" android:hint="详细地址" />
+            </LinearLayout>
+            <Button android:textColor="#ffffffff" android:id="@id/deleteAddress" android:background="@anim/red_green_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="删除收货地址" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

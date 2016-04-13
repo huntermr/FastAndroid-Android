@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒杀" android:layout_centerInParent="true" style="@style/top_title" />
+        <RelativeLayout android:id="@id/btnRule" android:background="@anim/title_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:src="@drawable/rule" android:layout_centerInParent="true" style="@style/title_action_button" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/listPanicList" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/list_selector" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/relTitle" />
+    <include android:id="@id/relLogo" layout="@layout/default_logo" />
+</RelativeLayout>

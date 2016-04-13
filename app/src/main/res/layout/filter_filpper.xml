@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:background="#fff3f4f6" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/push_left_in" android:outAnimation="@anim/push_left_out"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

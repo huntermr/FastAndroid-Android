@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/relGroupItem" android:background="@drawable/groupbuy_up_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/textTuanInfo" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ssssss" />
+    <RelativeLayout android:gravity="center" android:id="@id/relGroupItemInfo" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textTuanInfo">
+        <FrameLayout android:id="@id/fraProductImage" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@drawable/rank_detile_pic_down_bg" />
+            <ImageView android:layout_gravity="center" android:id="@id/imgGroupItem" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/icon" />
+        </FrameLayout>
+        <TextView android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textBug" android:background="@drawable/item_button" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:text="参团购买" android:layout_below="@id/fraProductImage" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relGroupWordInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/relGroupItemInfo" android:layout_below="@id/textTuanInfo">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffd61229" android:id="@id/textVanclPrice" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textProductName" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/textShopPrice" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textVanclPrice" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/textGroupPeoples" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textShopPrice" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/textGroupTime" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textGroupPeoples" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/textProductCount" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textGroupTime" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

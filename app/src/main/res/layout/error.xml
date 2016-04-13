@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@id/errorTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您的app已经崩溃，下面是崩溃信息，您的SD中也会保留一份，如果不是业务错误，请将错误信息复制一份给张鹏，谢谢!" />
+    <EditText android:enabled="false" android:id="@id/errorMsg" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+    <Button android:id="@id/know" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="知道了" />
+</LinearLayout>

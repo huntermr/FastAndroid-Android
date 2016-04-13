@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/textTitle" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent_title" android:layout_centerVertical="true" style="@style/top_title" />
+        <TextView android:id="@id/txt_clear" android:text="清空" style="@style/title_right_text_button" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" />
+    <RelativeLayout android:id="@id/relNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/textGoHome" android:background="@anim/single_button_selector" android:paddingTop="5.0dip" android:layout_width="144.0dip" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:text="去购物" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffbcbfc5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/recent_text_no_data" android:layout_above="@id/textGoHome" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

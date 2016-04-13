@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/topBg" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/backLayout" layout="@layout/back_layout" />
+            </LinearLayout>
+            <TextView android:id="@id/txtPromotionTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="买赠推荐全场特惠商品" android:layout_centerInParent="true" style="@style/top_title" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ExpandableListView android:id="@id/expandListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="@null" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

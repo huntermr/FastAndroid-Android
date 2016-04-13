@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.19">
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_gravity="center" android:id="@id/textGroupTitle" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结算中心" android:layout_alignParentLeft="true" style="@style/top_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linHead" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView1" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sina_on" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜,团城购买成功" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:background="@drawable/edittext_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/textView2" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="商品名称:窝里歌曲" />
+        <include android:layout_marginTop="10.0dip" layout="@layout/devideline_fafafa" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/textView3" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="送货方式:快递" />
+        <include android:layout_marginTop="10.0dip" layout="@layout/devideline_fafafa" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/textView4" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="购买数量:100" />
+        <include android:layout_marginTop="10.0dip" layout="@layout/devideline_fafafa" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/textView5" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="收货人:DavikChen" />
+        <include android:layout_marginTop="10.0dip" layout="@layout/devideline_fafafa" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/textView1" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="参团时间:2011-11-11-11-11" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示:" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_message_one" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_message_two" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/textView7" android:background="@anim/green_red_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginRight="10.0dip" android:text="返回首页" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/textView8" android:background="@anim/red_green_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:text="我的团购" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

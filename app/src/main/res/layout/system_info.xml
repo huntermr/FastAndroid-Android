@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:ellipsize="end" android:id="@id/system_info_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_title" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip">
+        <ImageView android:id="@id/system_info_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/system_info" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/system_info" android:background="@anim/question_selector" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/system_info_img" android:layout_alignTop="@id/system_info_img">
+            <TextView android:textSize="16.0sp" android:textColor="#ff2d2d2d" android:autoLink="web" android:id="@id/system_info_content" android:layout_width="250.0dip" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/system_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/system_info_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

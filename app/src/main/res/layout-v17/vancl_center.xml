@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/linHead" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/relShopCar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/relShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/linFavorite" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/biaoti_color_txt" android:ellipsize="none" android:id="@id/textProductTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我的凡客" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/RelativeLayout03" android:layout_below="@id/linHead">
+        <ScrollView android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1100.0dip">
+                <RelativeLayout android:gravity="center" android:background="#ffd8d9db" android:layout_width="fill_parent" android:layout_height="140.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/userUnlogin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff537eba" android:gravity="center" android:id="@id/txtUserLogin" android:paddingTop="@dimen/indicator_corner_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" android:singleLine="true" />
+                        <ImageView android:paddingTop="@dimen/indicator_corner_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/detail_tab_line" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff537eba" android:gravity="center" android:id="@id/txtUserReg" android:paddingTop="@dimen/indicator_corner_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/relUserInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center">
+                        <TextView android:textSize="18.0sp" android:textColor="#ff525355" android:gravity="center" android:id="@id/txtUserName" android:paddingTop="@dimen/indicator_corner_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/activity_vertical_margin" android:textColor="@color/biaoti_color_txt_press" android:gravity="center" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/imageView1" android:layout_width="20.0dip" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/biaoti_color_txt_press" android:id="@id/txtPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            <ImageView android:id="@id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/biaoti_color_txt_press" android:id="@id/txtBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </LinearLayout>
+                        <TextView android:textSize="13.0sp" android:textColor="@color/biaoti_color_txt_press" android:layout_gravity="center" android:id="@id/chengzhangValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_account_pay" android:background="@anim/list_selector_myvancl" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imageView882" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_pay" />
+                        <TextView android:textSize="@dimen/header_footer_top_bottom_padding" android:textColor="@color/grid_text_color" android:textColorHint="@color/biaoti_color_txt" android:id="@id/account_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待付款" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_account_receive" android:background="@anim/list_selector_myvancl" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imageView88" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_receive" />
+                        <TextView android:textSize="@dimen/header_footer_top_bottom_padding" android:textColor="@color/grid_text_color" android:textColorHint="@color/biaoti_color_txt" android:id="@id/account_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待收货" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_account_send" android:background="@anim/list_selector_myvancl" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imageView886" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_send" />
+                        <TextView android:textSize="@dimen/header_footer_top_bottom_padding" android:textColor="@color/grid_text_color" android:textColorHint="@color/biaoti_color_txt" android:id="@id/account_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待发货" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:background="@color/filter_font_color_default" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/orderButton" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView8" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/indicator_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/allorder" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textView1" android:paddingLeft="@dimen/side_navigation_item_text_size" android:paddingTop="@dimen/indicator_internal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部订单" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/filter_font_color_default" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/relCard" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageViewCard" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/menu_header_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mycard" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewCard" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的礼品卡" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/imageView111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/myCount" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageViewmyCount" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/myjifen" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewCount" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的积分" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/imageView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/addressButton" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView10" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adress" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewaddr" android:background="@anim/list_selector_myvancl" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址管理" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/filter_font_color_default" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/pinglunshangpin" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView11" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewshangpin" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的评论" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@anim/list_selector_myvancl" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                    <ImageView android:id="@id/imageView13" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ask" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewQues" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的提问" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/favoriteButton" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView14" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soucang" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewfavorite" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的收藏" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/imageView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/relRectent" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView16" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/looking" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewRectent" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近浏览" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/filter_font_color_default" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/relHotPot" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView17" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/advice" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewHotPot" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投诉建议" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/imageView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/relComment" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView19" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pingfen_me" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewComment" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="给我评分" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/filter_font_color_default" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/helplist" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView20" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textViewhelplist" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帮助中心" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/aboutVancl" android:background="@anim/list_selector_myvancl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/imageView21" android:paddingLeft="@dimen/header_footer_left_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_vancl_about" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/new_vancl_home_bg" android:textColorHint="@color/biaoti_color_txt" android:id="@id/textAboutVancl" android:paddingLeft="@dimen/side_navigation_item_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:id="@id/exitlist" android:background="@anim/list_selector_myvancl" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnExit" android:background="@anim/btn_red" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="退出登录" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include layout="@layout/bottom_main" />
+</RelativeLayout>

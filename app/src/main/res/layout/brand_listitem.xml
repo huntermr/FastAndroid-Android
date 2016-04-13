@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffd3d3d3" android:id="@id/txt_section" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/new_vancl_home_list_divider1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:background="@color/new_vancl_home_list_divider2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ffd3d3d3" android:id="@id/txt_brandname" android:background="@anim/list_selector_myvancl" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="2.0dip">
+        <View android:background="@color/new_vancl_home_list_divider1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:background="@color/new_vancl_home_list_divider2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

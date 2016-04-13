@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/relLinImage" android:padding="2.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <ImageView android:id="@id/imgNewGoods" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/default_70x70" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:gravity="center" android:id="@id/textRecommendPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥100.00" android:layout_below="@id/relLinImage" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

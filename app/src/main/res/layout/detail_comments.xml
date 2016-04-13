@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/quanquan1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/loading_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linComments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="综合评分:" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <RatingBar android:id="@id/ratingStar" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" android:layout_toRightOf="@id/text1" android:layout_centerInParent="true" style="@style/pinfenRatingBar" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textTotalCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            <ImageView android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_talk" android:layout_toLeftOf="@id/textTotalCount" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:background="#ffd2d9de" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="商品评论" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linForCommentList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="300.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textCommentCommit" android:background="@anim/product_addshopcart_button" android:layout_width="142.0dip" android:layout_height="38.0dip" android:text="查看更多评论" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textIsNoData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:text="暂无评论内容" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linNoDataTryComments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textNoData" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:text="数据请求失败,请重试" />
+        <Button android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/btnTryComments" android:background="@anim/single_button_selector" android:layout_width="144.0dip" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="重试" />
+    </LinearLayout>
+</merge>

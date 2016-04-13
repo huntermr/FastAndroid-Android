@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/imageLayout" android:layout_width="84.0dip" android:layout_height="84.0dip">
+        <ImageView android:id="@id/imgNewGoodsBg" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@drawable/rank_detile_pic_down_bg" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/imgNewGoods" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textNewGoodsPriceTEMP" android:background="#b2000000" android:layout_width="70.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignBottom="@id/imgNewGoods" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/textNewGoodsName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffcc3647" android:id="@id/textNewGoodsPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

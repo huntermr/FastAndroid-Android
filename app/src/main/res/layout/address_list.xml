@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址管理" android:layout_centerInParent="true" style="@style/top_title" />
+        <TextView android:id="@id/txt_addAddress" android:text="添加" style="@style/title_right_text_button" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/txtNoAddress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无地址，添加请点击右上角 +" android:layout_centerInParent="true" />
+    <ListView android:id="@id/addressListView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/topBg" />
+    <include android:id="@id/relLogo" layout="@layout/default_logo" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <Button android:id="@id/buttonp" android:background="@drawable/calendar_left_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:id="@id/month_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="month_name" android:layout_centerInParent="true" />
+        <Button android:id="@id/buttonn" android:background="@drawable/calendar_right_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/day_names" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="24.0dip" android:text="day_name">
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="三" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="四" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="五" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="六" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/nine_grid_single_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+    <com.vancl.custom.CalendarGallery android:id="@id/calendar_gallery" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

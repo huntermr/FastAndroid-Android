@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/txtTitle" android:background="@drawable/bg_up" android:layout_width="300.0dip" android:layout_height="34.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_down" android:layout_width="300.0dip" android:layout_height="wrap_content">
+            <ListView android:id="@id/addressList" android:layout_width="fill_parent" android:layout_height="280.0dip" android:cacheColorHint="#00000000" android:divider="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

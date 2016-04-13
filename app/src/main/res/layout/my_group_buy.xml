@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机团购" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linTab" android:background="@drawable/list_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relTitle">
+        <LinearLayout android:gravity="center" android:id="@id/linTuanList" android:background="@drawable/productlist_tab_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/textGroupBuyBegin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进行中" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/linTuanRule" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/textGroupBuyEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已结束" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/linTab">
+        <ListView android:id="@id/listMyGroupBuy" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@anim/list_selector" android:cacheColorHint="#fff3f4f6" android:divider="@null" />
+        <ListView android:id="@id/listEndGroupBuy" android:visibility="gone" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@anim/list_selector" android:cacheColorHint="#fff3f4f6" android:divider="@null" />
+        <RelativeLayout android:id="@id/relTunPrompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/textGroupPromtly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您没有参加手机团购哦" android:layout_centerInParent="true" />
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnJoin" android:background="@anim/red_green_button" android:layout_width="142.0dip" android:layout_height="38.0dip" android:layout_marginTop="20.0dip" android:text="参加团购" android:layout_below="@id/textGroupPromtly" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include layout="@layout/default_logo" />
+    </RelativeLayout>
+</RelativeLayout>

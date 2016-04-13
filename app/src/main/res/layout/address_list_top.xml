@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/topView" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="@anim/account_center_product_list_bg_top" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_below="@id/topView" />
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

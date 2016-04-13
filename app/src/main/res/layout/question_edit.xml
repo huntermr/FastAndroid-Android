@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:background="@drawable/bg_title" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/question_edit_title" style="@style/top_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:padding="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/question_edit_info" />
+    <RelativeLayout android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <EditText android:gravity="top" android:id="@id/editContent" android:background="@anim/edittext_focused_selector" android:layout_width="fill_parent" android:layout_height="230.0dip" android:text="" android:lines="8" android:maxLength="60" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/textWordCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="0/60" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/btnSubmit" android:background="@anim/red_green_button" android:layout_width="144.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="50.0dip" android:text="@string/question_edit_submit" />
+</LinearLayout>

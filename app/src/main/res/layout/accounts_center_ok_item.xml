@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relContent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/textOrderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单1" />
+    <RelativeLayout android:background="@anim/myacount_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linNumberLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textOrderNumberHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textOrderNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 1288126371623812" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line1" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linNumberLayout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linMoneyLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line1">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textOrderPriceHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="需支付金额：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textPaymentAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥128.00" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line2" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linMoneyLayout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linSendAddressLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line2">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textAddressHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发货库房：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line3" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linSendAddressLayout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linSendLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line3">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textSendType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送方式 ：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textShippingMethod " android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line4" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linSendLayout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linTimedLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line4">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textSendTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预订到货时间：" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textDeliverytime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1-12天" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

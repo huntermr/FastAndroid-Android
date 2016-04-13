@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结算中心" android:layout_centerInParent="true" style="@style/top_title" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/relTop" />
+    <ScrollView android:paddingTop="10.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relTop" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/relSuccessLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/imgTrue" android:background="@drawable/submit_order_success" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/textTitleMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="恭喜，订单提交成功" android:layout_toRightOf="@id/imgTrue" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linContentLayoutPayMoneyTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/relSuccessLayout" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ffd61229" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="以下订单货到付款" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:id="@id/txtMoneyTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linContentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/linContentLayoutPayMoneyTitle" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linContentLayoutPayOnlineTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/linContentLayout" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ffd61229" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="以下订单待付款" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:id="@id/txtUnpayedTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linContentLayoutPayOnline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/linContentLayoutPayOnlineTitle" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/textRegulationLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/linContentLayoutPayOnline" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/linNormalMessage" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="积分规则：" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_order_sucess" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linTunMessage" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示:" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_message_one" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_message_two" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/txt_message_three" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_message_three" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/textRegulationLayout" android:layout_centerHorizontal="true">
+                <Button android:textColor="#ffffffff" android:id="@id/btnMyOrder" android:background="@anim/red_green_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="我的订单" android:layout_weight="1.0" />
+                <Button android:textColor="#ffffffff" android:id="@id/btnPayment" android:background="@anim/green_red_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="立即支付" android:layout_weight="1.0" />
+                <Button android:textColor="#ffffffff" android:id="@id/btnBackIndex" android:background="@anim/green_red_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="继续购物" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

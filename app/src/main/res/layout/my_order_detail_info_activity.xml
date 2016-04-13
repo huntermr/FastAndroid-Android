@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/back_layout" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="订单信息" android:layout_centerInParent="true" style="@style/top_title" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relTitle" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@anim/listitem_up_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="订单号:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_ordernumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8980q80898" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="订单状态:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_orderstatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送达成功" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="送货方式:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_delivermethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="支付方式:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_paymethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="货到付款" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="订单生成时间:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_ordertime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-06-22 14:38:40" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="发货时间:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_delivertime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-06-23 14:38:40" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="是否开发票:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_invoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="否" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_mid_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="发票抬头:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_invoiceHead" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@anim/listitem_bottom_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="送货要求:" />
+                <TextView android:textColor="#ffa5a5a5" android:id="@id/txt_CanSendProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

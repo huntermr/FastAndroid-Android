@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/blue" android:layout_width="92.0dip" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relComment" android:background="@drawable/cate_tab_bg" android:layout_width="92.0dip" android:layout_height="48.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/txtKeyWord" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:singleLine="true" />
+    </RelativeLayout>
+</RelativeLayout>

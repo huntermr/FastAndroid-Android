@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/biaoti_color_txt" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera_share_top" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/fraCameraBottom" android:layout_below="@id/relTop">
+        <ImageView android:id="@id/imgProcessed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_below="@id/relTop" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fraCameraBottom" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imgProcessed" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linShareOrReset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/imgShare" android:background="@anim/camera_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/camera_share_imgShare" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/imgReset" android:background="@anim/camera_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:text="@string/camera_share_imgReset" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

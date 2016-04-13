@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/itemContent" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <CheckBox android:gravity="center_vertical" android:id="@id/item_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/custom_checkbox" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relImage" android:layout_width="58.0dip" android:layout_height="90.0dip" android:layout_marginRight="2.0dip">
+            <ImageView android:id="@id/imgRankProductIcon" android:layout_width="58.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/promotionLayout" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shopcar_promotion_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="赠" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/relContent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+                <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="#ff4a4a4a" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txtGoodsName" android:layout_width="259.0dip" android:layout_height="wrap_content" android:text="商品名称" android:maxLines="2" android:minLines="1" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sizeAcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff4a4a4a" android:id="@id/txtColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="颜色:玫瑰粉色" android:singleLine="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff4a4a4a" android:id="@id/txtSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="尺码:XL" android:singleLine="true" />
+                    <TextView android:layout_width="2.0dip" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffb81c22" android:id="@id/txtPrice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="￥180.00" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/linEditProperty" android:paddingRight="@dimen/menu_header_line" android:paddingBottom="@dimen/menu_header_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/btnSubNum" android:background="@anim/sub_num_button" android:layout_width="32.0dip" android:layout_height="32.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_jian" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <EditText android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/editNum" android:background="@drawable/shoppingcart_middle" android:layout_width="40.0dip" android:layout_height="32.0dip" android:singleLine="true" android:maxLength="3" android:numeric="integer" android:layout_weight="1.0" android:imeOptions="actionDone" />
+                    <RelativeLayout android:id="@id/btnAddNum" android:background="@anim/add_num_button" android:layout_width="32.0dip" android:layout_height="32.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_jia" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginTop="4.0dip">
+                    <RelativeLayout android:id="@id/btnDelShopcar" android:background="#ffb81c22" android:layout_width="39.0dip" android:layout_height="100.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_shanchu" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/view2" android:background="@color/child_item_diveder" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/itemContent" android:color="#ffcccccc" />
+</RelativeLayout>

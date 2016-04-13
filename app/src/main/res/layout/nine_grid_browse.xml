@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/relMain" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/relHead" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/back_layout" />
+            </LinearLayout>
+            <TextView android:id="@id/textClass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/top_title" />
+            <RelativeLayout android:id="@id/relNineSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/imageNineSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nine_grid_browse" android:layout_centerInParent="true" style="@style/title_action_button" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/progressBar" android:background="@anim/progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/linChangeMode" android:background="@drawable/nine_grid_choice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/relHead" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:id="@id/linModeOne" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:enabled="true" android:id="@id/btnModeOne" android:background="@drawable/mode_one_up" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/textModeOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="列表" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/linModeTwo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:enabled="true" android:id="@id/btnModeTwo" android:background="@drawable/mode_two_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffc0c2c8" android:id="@id/textModeTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="小图" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/linModeThree" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:enabled="true" android:id="@id/btnModeThree" android:background="@drawable/mode_three_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffc0c2c8" android:id="@id/textModeThree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="大图" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/relLoading" android:layout_below="@id/linChangeMode">
+        <GridView android:gravity="center" android:id="@id/gridSmall" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#fff3f4f6" android:horizontalSpacing="1.0dip" android:numColumns="2" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relLoading" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="89.0dip" android:text="正在加载...." />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textNo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无商品" />
+    <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+</RelativeLayout>

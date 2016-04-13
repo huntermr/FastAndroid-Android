@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linProductDetailInfo" android:background="#ffffffff" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rel_points" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.vancl.custom.PagerContainer android:id="@id/pagerContainer" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.vancl.custom.BeastViewPager android:layout_gravity="center_horizontal" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.vancl.custom.PagerContainer>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignBottom="@id/pagerContainer" />
+            <ImageView android:id="@id/img_points" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txt_productname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lin_originalprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff676767" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/txtTeHuiPrice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ffb81c22" android:gravity="center_vertical" android:id="@id/txtPriceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="" />
+                <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff676767" android:gravity="center" android:layout_gravity="center" android:id="@id/textoriginalprice" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lin_CurrentPrice" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="14.0sp" android:textColor="#ffd00d00" android:gravity="center" android:id="@id/txt_whatprice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffd00d00" android:gravity="center" android:layout_gravity="center" android:id="@id/textCurrentPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txt_storage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffcc3647" android:gravity="left" android:id="@id/textTuanTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:text="fffff" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rel_colorname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="颜色：" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/textColorName" android:background="@anim/product_choise_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="颜色名称" android:maxLength="5" android:layout_toRightOf="@id/txt_color" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_coloricon" android:background="@drawable/productdetail_color_avatar_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/textColorName" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/textSizeName" android:background="@anim/product_choise_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLength="5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尺码：" android:layout_toLeftOf="@id/textSizeName" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linDetailMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/textNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:text="数据请求失败,请重试" />
+    </LinearLayout>
+</merge>

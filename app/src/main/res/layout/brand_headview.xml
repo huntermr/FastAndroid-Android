@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ff2e2e2e" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:id="@id/lin_brand_headview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffd3d3d3" android:id="@id/txt_grid_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="活动品牌" />
+        <com.vancl.custom.BrandGridView android:gravity="center" android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+        <LinearLayout android:orientation="vertical" android:id="@id/headview_line" android:layout_width="fill_parent" android:layout_height="2.0dip">
+            <View android:background="@color/new_vancl_home_list_divider1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/new_vancl_home_list_divider2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

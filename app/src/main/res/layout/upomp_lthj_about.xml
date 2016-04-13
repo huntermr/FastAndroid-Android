@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/upomp_lthj_scrollview_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/upomp_lthj_layout_padding">
+        <ImageView android:background="@drawable/upomp_lthj_splash_logo" android:layout_width="198.0dip" android:layout_height="86.0dip" android:layout_marginTop="40.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_marginTop="10.0dip" style="@style/upomp_lthj_about_item">
+            <TextView android:text="银联手机支付安全支付控件" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="版本说明:" style="@style/upomp_lthj_about_textview" />
+            <TextView android:text="@string/upomp_lthj_version" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="客服电话:" style="@style/upomp_lthj_about_textview" />
+            <TextView android:text="95516" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="中国银联股份有限公司版权所有" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="@string/upomp_lthj_about_copyright" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="北京融信优贝网络技术有限公司" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/upomp_lthj_about_item">
+            <TextView android:text="创建编号:" style="@style/upomp_lthj_about_textview" />
+            <TextView android:id="@id/upomp_lthj_build_no" style="@style/upomp_lthj_about_textview" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

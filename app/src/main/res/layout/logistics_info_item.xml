@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/textTime" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2011-11-11-11-11-11-11-1111" android:layout_weight="6.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/textInfo" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/linePrintInvoice" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

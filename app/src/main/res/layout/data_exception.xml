@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重试" />
+    <Button android:id="@id/know" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="知道了" />
+    <TextView android:textColor="#ffff0000" android:id="@id/errorMsg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textNameAndTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffbcbcbc" android:id="@id/textContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <TextView android:textColor="#ff333333" android:id="@id/textAdminName" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:textColor="#ff333333" android:id="@id/textAnswer" android:paddingLeft="5.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ffbcbcbc" android:id="@id/textTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

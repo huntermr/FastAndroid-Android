@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relInvoiceTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="设置" android:layout_centerVertical="true" style="@style/top_title" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:background="#ffd1d6da" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="消息中心设置" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/devideline_fafafa" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收提醒" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_switch" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/switch_unselect" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/devideline_fafafa" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_noti_time" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提醒时段" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/devideline_fafafa" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:background="#ffd1d6da" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="清除缓存" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/devideline_fafafa" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_cleardata" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除缓存" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除缓存,释放更多空间" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/devideline_fafafa" />
+    </LinearLayout>
+</LinearLayout>

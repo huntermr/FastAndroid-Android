@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linComment" android:background="@anim/xianshibug_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relImage" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+            <ImageView android:background="@drawable/rank_detile_pic_down_bg" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/imgProductIcon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/relContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginBottom="0.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/textProductName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="0.0dip" android:text="商品名称" />
+            <RelativeLayout android:id="@id/lin_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_below="@id/textProductName">
+                <TextView android:textSize="16.0sp" android:textColor="#ffd61229" android:gravity="left" android:id="@id/textProductPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="售价：" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/textDiscount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="折扣" android:layout_toRightOf="@id/textProductPrice" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/textProductMarketPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

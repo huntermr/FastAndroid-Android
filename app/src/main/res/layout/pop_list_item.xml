@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/hotImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/message_info_no_read" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffb81c22" android:id="@id/textTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="xxx消息内容xxx" android:layout_toRightOf="@id/hotImg" android:layout_alignTop="@id/hotImg" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffb7b7b7" android:id="@id/textTime" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="xxx消息时间xxx" android:layout_below="@id/textTitle" android:layout_alignLeft="@id/textTitle" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/textTime" />
+    </RelativeLayout>
+</RelativeLayout>

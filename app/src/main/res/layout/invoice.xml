@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relInvoiceTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:id="@id/textCategoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票" android:layout_centerInParent="true" style="@style/top_title" />
+        <TextView android:id="@id/txtSure" android:text="确定" style="@style/title_right_text_button" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@anim/myacount_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <RelativeLayout android:id="@id/customerTypeLayout" android:background="@anim/list_selector_round_corner_up" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="-1.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtCustomerTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="客户类型" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/txtCustomerTypeArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtCustomerType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="公司" android:singleLine="true" android:layout_toLeftOf="@id/txtCustomerTypeArrow" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.vancl.custom.MyEditText android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/editInvoiceHead" android:background="@null" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:hint="请输入发票抬头" android:singleLine="true" android:maxLength="50" />
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/invoiceTypeLayout" android:background="@anim/list_selector_round_corner_up" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="-1.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtInvoiceTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="发票类型" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/txtInvoiceTypeArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtInvoiceType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="服装" android:singleLine="true" android:layout_toLeftOf="@id/txtInvoiceTypeArrow" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@anim/myacount_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <com.vancl.custom.MyEditText android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/editSWDJH" android:background="@null" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="8.0dip" android:hint="税务登记号" android:singleLine="true" android:maxLength="50" />
+    </LinearLayout>
+</LinearLayout>

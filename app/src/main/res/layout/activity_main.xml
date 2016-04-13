@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff3f4f6">
+
+    <RelativeLayout
+        android:id="@id/contentLayoutrl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@id/topBg"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/biaoti_color">
+
+            <TextView
+                style="@style/top_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="分类"
+                android:textColor="@color/biaoti_color_txt" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/contentLayoutll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/topBg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.26">
+
+                <ListView
+                    android:id="@id/listView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/group_item_bg"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#ffcdd0d0"
+                    android:dividerHeight="3.0px"
+                    android:scrollbars="none"
+                    android:textColor="@color/daohang_biaoti" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.74"
+                android:background="#ffffffff">
+
+                <GridView
+                    android:id="@id/gridView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/white"
+                    android:horizontalSpacing="7.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:paddingTop="10.0dip"
+                    android:verticalSpacing="1.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/contentLayoutll"
+            android:scaleType="fitXY"
+            android:src="@drawable/contents_line_gray" />
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_main" />
+</RelativeLayout>

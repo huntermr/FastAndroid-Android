@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentTop="true">
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="消息中心" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/mlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#ffbcc0c4" android:dividerHeight="1.0px" />
+    <include layout="@layout/devideline_fafafa" />
+</LinearLayout>

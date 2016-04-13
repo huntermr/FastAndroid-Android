@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTop" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/top_title" />
+        <RelativeLayout android:id="@id/relWebViewLoadData" android:background="@anim/title_icon_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:src="@drawable/refresh_page" android:layout_centerInParent="true" style="@style/title_action_button" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relWebViewLoadData" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relTop" android:layout_centerHorizontal="true" />
+</RelativeLayout>

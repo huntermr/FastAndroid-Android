@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ListView android:id="@id/listView1" android:background="@color/group_item_bg" android:scrollbars="none" android:layout_width="49.0dip" android:layout_height="435.0dip" android:cacheColorHint="@android:color/transparent" android:divider="@color/child_item_diveder" android:layout_weight="0.3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/linearLayout1" android:layout_alignLeft="@id/linearLayout1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <include layout="@layout/bottom_main" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="47.0dip" android:layout_height="436.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <GridView android:id="@id/gridView1" android:background="@color/white" android:layout_width="272.0dip" android:layout_height="451.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:columnWidth="90.0dip" android:numColumns="3" android:layout_above="@id/linearLayout3" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

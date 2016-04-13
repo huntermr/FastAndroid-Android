@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff2e2e2e" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store_cate_default" android:layout_centerInParent="true" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff222020" android:layout_gravity="center" android:id="@id/txt_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="店铺无分类" android:layout_below="@id/img_logo" android:layout_centerInParent="true" />
+    <ExpandableListView android:id="@id/expandlistview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#00ffffff" android:divider="#00ffffff" android:overScrollFooter="@null" />
+</RelativeLayout>

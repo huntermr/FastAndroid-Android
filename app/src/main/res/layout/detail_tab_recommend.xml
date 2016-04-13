@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_recommend_tab" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/rel_shop" android:background="@anim/product_detail_4corner_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:gravity="center_vertical" android:id="@id/img_shopicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/detail_store_icon" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/textShopName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="店铺名称" android:layout_toRightOf="@id/img_shopicon" android:layout_centerVertical="true" />
+            <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/txtRecommendTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <GridView android:gravity="center" android:id="@id/gridRecommend" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#ffffffff" android:numColumns="2" />
+    </LinearLayout>
+</merge>

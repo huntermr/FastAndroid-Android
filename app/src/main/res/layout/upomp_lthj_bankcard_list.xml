@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/upomp_lthj_bankcard_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:childDivider="#00000000" android:divider="@drawable/upomp_lthj_row_line" style="@style/upomp_lthj_info_layout" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/upomp_lthj_no_card_layout" android:visibility="gone" style="@style/upomp_lthj_info_layout">
+        <com.unionpay.upomp.lthj.widget.LineFrameView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_card_icon" android:text="@string/upomp_lthj_no_bind" />
+        <ImageButton android:id="@id/upomp_lthj_refrush_btn" android:src="@drawable/upomp_lthj_refresh_icon" android:layout_alignParentRight="true" style="@style/upomp_lthj_lineframe_icon" />
+    </RelativeLayout>
+    <Button android:id="@id/upomp_lthj_add_bankcard_btn" android:text="@string/upomp_lthj_add_card" style="@style/upomp_lthj_button_big_single" />
+</LinearLayout>

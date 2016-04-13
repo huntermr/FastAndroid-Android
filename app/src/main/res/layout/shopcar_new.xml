@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linSubmitLayout" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.65">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <CheckBox android:textColor="@color/biaoti_color_txt" android:gravity="center" android:id="@id/checkBox2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="全选" style="@style/custom_checkbox" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="合计:" />
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffb81c22" android:id="@id/txtTotalPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="¥180.00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/submitOrderLayout" android:background="#ffb81c22" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.35">
+                    <ImageView android:id="@id/btnSubmitOrder" android:background="@anim/btn_shopcar_submit" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtSubmitOrder" android:background="#ffb81c22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="结算" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <include layout="@layout/bottom_main" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/linSubmitLayout" android:layout_alignParentTop="true">
+            <ExpandableListView android:id="@id/shopcarListView" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:transcriptMode="normal" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="@null" android:overScrollFooter="@null" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentTop="true">
+            <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="购物车" android:layout_centerInParent="true" style="@style/top_title" />
+            <TextView android:textColor="#ffb81c22" android:id="@id/editShopCarBtn" android:text="编辑" android:layout_alignParentRight="true" style="@style/title_right_text_button" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shopcarNo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/shoppingcar_no" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffa8a8a8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物车还是空空哒，赶紧去购买" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="16.0sp" android:textColor="#ffa8a8a8" android:id="@id/btnFavorite" android:background="@drawable/gray_soild" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="我的收藏" android:layout_weight="1.0" />
+                    <Button android:textSize="16.0sp" android:textColor="#ffa8a8a8" android:id="@id/btnRecentBrowse" android:background="@drawable/gray_soild" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="去逛逛" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <include layout="@layout/bottom_main" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/guidPromotion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/relDefaultLogo" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+        <include android:id="@id/relLogo" layout="@layout/default_logo" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <CheckBox android:textColor="@color/biaoti_color_txt" android:id="@id/checkBox1" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="    全选" />
+        <View android:id="@id/view1" android:layout_width="0.0dip" android:layout_height="0.0dip" android:color="#ffcccccc" />
+    </RelativeLayout>
+</RelativeLayout>

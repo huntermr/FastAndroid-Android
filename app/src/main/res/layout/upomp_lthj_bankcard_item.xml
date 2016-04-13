@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_width_height_fw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_bankcard_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_card_icon" android:layout_toLeftOf="@id/upomp_lthj_default_card" />
+        <ImageView android:id="@id/upomp_lthj_default_card" android:background="@drawable/upomp_lthj_default_icon" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/upomp_lthj_card_menu_drop" android:background="@drawable/upomp_lthj_default_drop" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignLeft="@id/upomp_lthj_default_card" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/upomp_lthj_scrollview_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_padding"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/upomp_lthj_tradeinfolayout" layout="@layout/upomp_lthj_hometradeinfo" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/upomp_lthj_input_layout">
+                <EditText android:id="@id/upomp_lthj_username_edit" android:hint="@string/upomp_lthj_username_hint" android:maxLength="20" android:layout_centerVertical="true" style="@style/upomp_lthj_input_edittext" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/upomp_lthj_input_layout">
+                <EditText android:id="@id/upomp_lthj_password_edit" android:hint="@string/upomp_lthj_password_hint" android:layout_toLeftOf="@id/upomp_lthj_forget_pwd" android:layout_centerVertical="true" android:inputType="phone" style="@style/upomp_lthj_input_edittext" />
+                <Button android:id="@id/upomp_lthj_forget_pwd" android:text="@string/upomp_lthj_forget_password" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_verifycode_btn" />
+            </RelativeLayout>
+            <com.unionpay.upomp.lthj.widget.ValidateCodeView android:id="@id/upomp_lthj_validatecode_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/upomp_lthj_margin_top" />
+            <Button android:id="@id/upomp_lthj_next_btn" android:text="@string/upomp_lthj_login" style="@style/upomp_lthj_button_big_single" />
+        </LinearLayout>
+        <Button android:id="@id/upomp_lthj_use_card_pay" android:background="@drawable/upomp_lthj_button_green" android:text="@string/upomp_lthj_use_card" style="@style/upomp_lthj_button_big_single" />
+    </LinearLayout>
+</ScrollView>

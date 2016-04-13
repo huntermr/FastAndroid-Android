@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_txt_black" android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_title" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/imageArrowBack" android:padding="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/loginButtonll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <Button android:id="@id/normalLoginBt" android:text="@string/normal_login" style="@style/btn_style" />
+            <Button android:id="@id/identifyLoginBt" android:text="@string/identify_login" style="@style/btn_style" />
+        </LinearLayout>
+        <ImageView android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/contents_line" android:scaleType="fitXY" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/line6" android:layout_width="0.0dip" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_weight="2.0" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_txt_black_gry" android:gravity="center" android:id="@id/otherAccLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/otherlogin" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/line7" android:layout_width="0.0dip" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_weight="2.0" android:contentDescription="@null" />
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/quickLoginLogoHSV" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageSinaMicroBlogLogo" android:background="@drawable/sinalogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+                <ImageView android:id="@id/imageWeChatLogo" android:background="@drawable/weixinlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:contentDescription="@null" />
+                <ImageView android:id="@id/imageAlipayLogo" android:background="@drawable/zhifubaologo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:contentDescription="@null" />
+                <ImageView android:id="@id/imageTencentMicroBlogLogo" android:background="@drawable/qqweibologo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:contentDescription="@null" />
+                <ImageView android:id="@id/imageRenRenLogo" android:background="@drawable/renrenlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:contentDescription="@null" />
+                <ImageView android:id="@id/imageXiaoMiLogo" android:background="@drawable/xiaomilogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:contentDescription="@null" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <com.vancl.custom.ReboundScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBar" android:layout_below="@id/topBar">
+        <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/editTextll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="42.0sp" android:textStyle="bold" android:textColor="@color/color_txt_red" android:id="@id/textVancl" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_bg_notifi_title" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/line3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/textVancl" android:contentDescription="@null" />
+                <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/userEdit" android:background="@null" android:paddingTop="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint1" android:singleLine="true" android:drawableRight="@drawable/clear_edit" android:drawablePadding="15.0dip" android:layout_below="@id/line3" android:layout_alignLeft="@id/line4" android:layout_alignRight="@id/line4" />
+                <ImageView android:id="@id/line4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/userEdit" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+                <Button android:textSize="15.0sp" android:textColor="@color/color_txt_red" android:id="@id/getSMSIdentifyCode" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/getSMSIdentifyCode" android:layout_below="@id/line4" android:layout_alignRight="@id/line4" />
+                <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/pwdEdit" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint2" android:singleLine="true" android:drawableRight="@drawable/clear_edit" android:drawablePadding="15.0dip" android:layout_below="@id/line4" android:layout_alignLeft="@id/line4" android:layout_alignRight="@id/line4" android:inputType="textPassword" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:contentDescription="@null" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip">
+                <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/btnLogin" android:background="@anim/btn_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_title" android:layout_centerHorizontal="true" />
+                <Button android:textSize="16.0sp" android:textColor="@color/color_txt_red" android:id="@id/quickRegister" android:background="@null" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickrel" android:layout_below="@id/btnLogin" android:layout_alignParentLeft="true" />
+                <Button android:textSize="16.0sp" android:textColor="@color/color_txt_red" android:id="@id/retrpwd" android:background="@null" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retrpwd" android:layout_below="@id/btnLogin" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.vancl.custom.ReboundScrollView>
+</RelativeLayout>

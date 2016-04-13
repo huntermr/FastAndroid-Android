@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <include android:id="@id/backLayout" layout="@layout/back_layout" />
+            <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分类" android:layout_centerInParent="true" style="@style/top_title" />
+            <TextView android:id="@id/editShopCarBtn" android:text="编辑" style="@style/title_right_text_button" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/topBg" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topBg" android:layout_alignParentRight="true">
+            <ListView android:id="@id/listView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/bottom_main" />
+</RelativeLayout>

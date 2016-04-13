@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/itemBg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtOrderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单1" />
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffd00d00" android:id="@id/txtOrderPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="¥180.00" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffa5a5a5" android:id="@id/txtOrderContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="发货仓库，上海仓库，7日内送" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

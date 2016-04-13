@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/upomp_lthj_info_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_username_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_user_icon" />
+        <Button android:id="@id/upomp_lthj_account_mange_btn" android:text="@string/upomp_lthj_account_manage" style="@style/upomp_lthj_light_blue_btn" />
+    </RelativeLayout>
+    <ImageView style="@style/upomp_lthj_rowline" />
+    <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_welcome_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_shield_icon" />
+</LinearLayout>

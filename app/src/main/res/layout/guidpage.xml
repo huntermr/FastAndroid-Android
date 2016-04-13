@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vancl.custom.CustomRelativeLayout android:id="@id/appContentLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/contentView" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.vancl.custom.CustomRelativeLayout>

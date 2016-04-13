@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结算中心" android:layout_centerInParent="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/submitOrderLayout" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="223.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="top" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="金额总计" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffd00d00" android:id="@id/txtTotalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageView android:id="@id/btnSubmitOrder" android:background="#ffb81c22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交订单" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/scrollView1" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/submitOrderLayout" android:layout_below="@id/topBg">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/stockoutTip" android:background="@drawable/stockout_item_bg" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff494000" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="部分商品缺货，点击查看" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/stockout_tip_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="收货信息" />
+            <LinearLayout android:orientation="vertical" android:background="@anim/myacount_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/addressItemLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/noAddressLabel" android:background="@anim/list_selector_round_corner_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="-1.0dip" android:text="暂无地址，请点击添加" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/addressLayout" android:background="@anim/list_selector_round_corner_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-1.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货人" />
+                            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtUserTel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <TextView android:textColor="#ffa5a5a5" android:id="@id/txtAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <RelativeLayout android:id="@id/sendTimeLayout" android:background="@anim/list_selector_round_corner_down" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="-1.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtSendTimeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="送货时间" android:layout_centerVertical="true" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtSendTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/txtSendTimeLabel" android:layout_centerVertical="true" />
+                        <ImageView android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:text="支付信息" />
+                <RelativeLayout android:id="@id/payTypeLayout" android:background="@anim/shopcar_product_list_selector_top" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="-1.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtPayTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="支付方式" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtPayType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/txtPayTypeLabel" android:layout_centerVertical="true" />
+                    <ImageView android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/balancePayLayout" android:background="@anim/shopcar_product_list_selector_middle" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="-1.0dip">
+                    <ImageView android:id="@id/imgBalancePayArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtBalancePay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="余额支付" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtBalanceContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/txtBalancePay" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linGiftBalanceLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip">
+                    <RelativeLayout android:id="@id/giftCardLayout" android:background="@anim/shopcar_product_list_selector_middle" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="-1.0dip">
+                        <ImageView android:id="@id/imgGiftCardArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtGiftCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="礼品卡" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff006bcf" android:id="@id/txtGiftContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/txtGiftCard" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip">
+                    <RelativeLayout android:id="@id/RelativeLayout01" android:background="@anim/shopcar_product_list_selector_bottom" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="-1.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/custom_checkbox" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="商品清单" />
+            <ListView android:id="@id/shopcarListView" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:listSelector="@drawable/whitepoint" android:cacheColorHint="#00000000" android:divider="@null" />
+            <LinearLayout android:orientation="vertical" android:id="@id/orderListInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/linDeffentPay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@anim/account_center_product_list_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/linOrderOneTitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:id="@id/txtPayMethodLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="以下订单支持多种付款方式, 请任选一种:" />
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/linPayment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/txtPayMethodLabel">
+                            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtPayMoney" android:background="@anim/green_red_button" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="现金支付\n(货到付款)" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtPayPOS" android:background="@anim/green_red_button" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="POS机刷卡\n(货到付款)" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtPayWeiXin" android:background="@anim/green_red_button" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="微信支付" android:layout_weight="1.0" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtPayOnline" android:background="@anim/green_red_button" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="在线支付\n(支付宝/银联)" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linOrderPayMoney" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:orientation="vertical" android:id="@id/relOrderTwoTitle" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/balanceSwitchLayoutPayOnline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <ImageView android:layout_gravity="center" android:id="@id/balancePayBPayOnline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/over" />
+                            <ImageView android:layout_gravity="center" android:id="@id/balancePayCheckPayOnline" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/over_icon" />
+                        </FrameLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:id="@id/txtOrderTwoTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以下订单仅支持在线支付" android:layout_toRightOf="@id/balanceSwitchLayoutPayOnline" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不勾选则不结算这些商品" android:layout_toRightOf="@id/balanceSwitchLayoutPayOnline" android:layout_below="@id/txtOrderTwoTitle" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtPayOnline2" android:background="@drawable/button_green" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 在线支付\n(支付宝/银联)" android:layout_alignParentRight="true" />
+                        <ImageView android:id="@id/img_expand_payonline" android:background="@drawable/category_group_arrow_up" android:padding="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linOrderPayOnline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="金额小计" />
+            <LinearLayout android:orientation="vertical" android:id="@id/priceInfo" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/discountsInfo" android:background="@drawable/discount_message_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linOtherLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <RelativeLayout android:id="@id/invoiceLayout" android:background="@anim/shopcar_product_list_selector_left_top_left_bottom" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imgInvoiceArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtInvoice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="发票" android:singleLine="true" android:layout_alignRight="@id/imgInvoiceArrow" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/remarkLayout" android:background="@anim/shopcar_product_list_selector_right_top_right_bottom" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imgRemarkArrow" android:background="@drawable/img_my_acount_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/txtRemark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="订单备注" android:singleLine="true" android:layout_toLeftOf="@id/imgRemarkArrow" android:layout_centerVertical="true" />
+                    <View android:background="@anim/shopcar_product_list_selector_line" android:layout_width="1.0dip" android:layout_height="46.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/group_item_pressed_bg" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/area_layout" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <ImageView android:id="@id/area_img" android:background="@drawable/down" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" />
+        <TextView android:textColor="@color/tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/area_textView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/area_str" />
+    </LinearLayout>
+    <View android:background="@color/child_item_diveder" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wage_layout" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <ImageView android:id="@id/wage_img" android:background="@drawable/down" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" />
+        <TextView android:textColor="@color/tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/wage_textView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/wage_str" />
+    </LinearLayout>
+    <View android:background="@color/child_item_diveder" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/class_layout" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <ImageView android:id="@id/class_img" android:background="@drawable/down" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" />
+        <TextView android:textColor="@color/tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/class_textView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/class_str" />
+    </LinearLayout>
+    <View android:background="@color/child_item_diveder" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <ImageView android:background="@drawable/search" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

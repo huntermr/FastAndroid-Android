@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relTop" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/back_layout" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手机注册" android:layout_centerVertical="true" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linBody" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/relTop" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@id/TextView01" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="手机注册" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/editPhone" android:background="@anim/edittext_focused_selector" android:paddingRight="11.0dip" android:layout_width="158.0dip" android:layout_height="39.0dip" android:layout_marginTop="5.0dip" android:minWidth="290.0dip" android:hint="请输入您的手机号码" android:ems="10" android:singleLine="true" android:drawableRight="@drawable/clear_edit" android:layout_weight="1.25" />
+            <LinearLayout android:layout_width="20.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <Button android:textColor="#ffff0000" android:id="@id/validateCode" android:background="@anim/dialog_sure_button_bg" android:layout_width="106.0dip" android:layout_height="fill_parent" android:text="获取验证码" android:layout_weight="0.38" />
+        </LinearLayout>
+        <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/inputValidateCode" android:background="@anim/edittext_focused_selector" android:paddingRight="11.0dip" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginTop="5.0dip" android:minWidth="290.0dip" android:hint="请输入验证码" android:ems="10" android:singleLine="true" android:drawableRight="@drawable/clear_edit" android:layout_weight="1.66" />
+        <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/editPhoneNewPassword" android:background="@anim/edittext_focused_selector" android:paddingRight="11.0dip" android:layout_width="290.0dip" android:layout_height="39.0dip" android:layout_marginTop="5.0dip" android:minWidth="290.0dip" android:hint="密码：6-16位字母，数字，特殊字符 " android:password="true" android:singleLine="true" android:maxLength="16" android:drawableRight="@drawable/clear_edit" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <com.vancl.custom.MyEditText android:textSize="16.0sp" android:id="@id/editphoneConfirmPassword" android:background="@anim/edittext_focused_selector" android:paddingRight="11.0dip" android:layout_width="290.0dip" android:layout_height="39.0dip" android:layout_marginTop="5.0dip" android:minWidth="290.0dip" android:hint="再次输入密码 " android:password="true" android:singleLine="true" android:maxLength="16" android:drawableRight="@drawable/clear_edit" android:layout_weight="1.0" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/relUserRegister" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/linBody" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/linBody" android:layout_alignLeft="@id/relUserRegister" android:layout_alignRight="@id/relUserRegister">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/indicator_right_padding" android:textColor="#ffc0c0c0" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:text="注册账号即表示同意遵守" />
+            <TextView android:textSize="@dimen/indicator_right_padding" android:textStyle="normal" android:textColor="#ff666666" android:id="@id/textVanclRule" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginRight="44.0dip" android:text="《VANCL凡客诚品服务条款》" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnRegister" android:background="@anim/title_button_selector" android:layout_width="290.0dip" android:layout_height="39.0dip" android:layout_marginTop="15.0dip" android:text="点击注册" android:layout_below="@id/linearLayout1" android:layout_alignLeft="@id/relUserRegister" />
+</RelativeLayout>

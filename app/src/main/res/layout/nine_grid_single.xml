@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="#fff3f4f6" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relTop" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textColor="@color/biaoti_color_txt" android:ellipsize="none" android:id="@id/textSingleTitle" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/top_title" />
+        <RelativeLayout android:id="@id/relNineBrowseIcon" android:background="@anim/title_icon_bg" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imgNineGrid" android:background="@drawable/nine_grid_browse" android:layout_centerInParent="true" style="@style/title_action_button" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relNineBrowseIcon" />
+    </RelativeLayout>
+    <ListView android:id="@id/listSingle" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/relBottom" android:layout_below="@id/relTop" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/textPromty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无商品" android:layout_centerInParent="true" />
+</RelativeLayout>

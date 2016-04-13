@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_width_height_fw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_width_height_fw">
+        <TextView android:textSize="@dimen/upomp_lthj_lineframe_textsize" android:id="@id/upomp_lthj_userprotocol_title" style="@style/upomp_lthj_info_textview" />
+        <TextView android:textSize="@dimen/upomp_lthj_small_button_textsize" android:textColor="@drawable/upomp_lthj_text_black" android:id="@id/upomp_lthj_userprotocol_content" android:visibility="gone" style="@style/upomp_lthj_info_textview" />
+    </LinearLayout>
+</LinearLayout>

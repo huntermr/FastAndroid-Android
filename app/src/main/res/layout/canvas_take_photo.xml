@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="#fff3f4f6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:id="@id/surfaceLin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/coverImage" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/canvas" android:scaleType="fitXY" />
+        <ImageView android:id="@id/shutterImage" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/canvas_shutter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/relHandlePicture" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:id="@id/previewLin" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/previewImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/cancelImage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/canvas_cancl" android:layout_weight="1.0" />
+            <ImageView android:id="@id/yesImage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/canvas_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

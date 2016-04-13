@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/relTitle" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单详情" style="@style/top_title" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:background="@drawable/filter_bg_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送信息" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:id="@id/relTackingInfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单配送信息(物流信息)" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:background="@drawable/home_arrows" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:background="@drawable/filter_bg_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单详情" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:id="@id/relOrderDetail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center|left" android:id="@id/relOrderState" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textOrderStateHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单状态:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textOrderState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineSendType" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relOrderState" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relSendType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineSendType">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textSendTypeHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送货方式:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textSendType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/linePayType" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relSendType" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relPayType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linePayType">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textPayTypeHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textPayType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineOrderCreateTime" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relPayType" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relOrderCreateTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineOrderCreateTime">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textOrderCreateTimeHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单生成时间::" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textOrderCreate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineSendTime" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relOrderCreateTime" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relSendTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineOrderCreateTime">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textSendTimeHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单生成时间:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textSendTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/linePrintInvoice" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relSendTime" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relPrintInvoice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linePrintInvoice">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textPrintInvoiceHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开发票:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textPrintInvoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="开" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineInvoiceHead" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relPrintInvoice" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relInvoiceHead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineInvoiceHead">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textInvoiceHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票抬头:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textInvoiceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_toRightOf="@id/textInvoiceHead" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineCanSendProduct" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relInvoiceHead" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relCanSendProduct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineCanSendProduct">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textCanSendProductHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送货要求:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textCanSendProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineOtherInfo" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relCanSendProduct" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relOtherInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineOtherInfo">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textOtherInfoHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textOtherInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/textOtherInfoHead" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:id="@id/relProductItemHead" android:background="@drawable/filter_bg_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品清单" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relProductItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relProductItemHead" />
+    <RelativeLayout android:gravity="center|left" android:background="@drawable/filter_bg_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单收货地址" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:id="@id/relOrderAddress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center|left" android:id="@id/relUserName" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textUserNameHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收件人:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="陈总" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineUserPhone" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relUserName" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relUserPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineUserPhone">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textUserPhoneHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系电话:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textUserPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="\ 13488765676" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineUserDetailAddress" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relUserPhone" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relUserDetailAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lineUserDetailAddress">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textUserDetailAddressHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货人地址:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textUserDetailAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="北京是shkafs凡客 短发第三方发生地方撒旦法的发放" android:singleLine="true" android:layout_toRightOf="@id/textUserDetailAddressHead" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/lineZipe" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relUserDetailAddress" />
+        <RelativeLayout android:gravity="center|left" android:id="@id/relZip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_below="@id/lineZipe">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/textZipHead" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮政编码:" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textZip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="437300" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/upomp_lthj_scrollview_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/upomp_lthj_layout_padding"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/upomp_lthj_quickpay_userinfo" />
+        <RelativeLayout style="@style/upomp_lthj_info_layout">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/upomp_lthj_quickpaycard_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_bankcard_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_card_icon" />
+                    <ImageView android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_drop_button" />
+                </RelativeLayout>
+                <ImageView style="@style/upomp_lthj_rowline" />
+                <com.unionpay.upomp.lthj.widget.LineFrameView android:id="@id/upomp_lthj_mobile_number_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_mobile_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/upomp_lthj_input_layout">
+            <EditText android:id="@id/upomp_lthj_mobilemac_edit" android:hint="@string/upomp_lthj_mobile_mac_hint" android:maxLength="6" android:layout_centerVertical="true" android:inputType="phone" style="@style/upomp_lthj_input_edittext" />
+            <Button android:id="@id/upomp_lthj_get_mac_btn" android:text="@string/upomp_lthj_get_mac" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_verifycode_btn" />
+        </RelativeLayout>
+        <Button android:id="@id/upomp_lthj_button_ok" android:text="@string/upomp_lthj_confirm_pay" style="@style/upomp_lthj_button_big_single" />
+    </LinearLayout>
+</ScrollView>

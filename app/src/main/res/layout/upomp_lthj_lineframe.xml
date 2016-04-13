@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/upomp_lthj_lineframe_image" style="@style/upomp_lthj_lineframe_icon" />
+    <ImageView android:background="@drawable/upomp_lthj_vertical_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/upomp_lthj_lineframe_textsize" android:textColor="@drawable/upomp_lthj_text_black" android:id="@id/upomp_lthj_lineframe_title" android:padding="@dimen/upomp_lthj_lineframe_text_pad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="4" />
+    <TextView android:textSize="@dimen/upomp_lthj_lineframe_textsize" android:textColor="@drawable/upomp_lthj_text_black" android:id="@id/upomp_lthj_lineframe_tv" android:padding="@dimen/upomp_lthj_lineframe_text_pad" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

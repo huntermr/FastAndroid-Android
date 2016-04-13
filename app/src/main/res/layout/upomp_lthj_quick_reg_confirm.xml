@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/upomp_lthj_background" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/upomp_lthj_layout_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/upomp_lthj_info_layout">
+        <com.unionpay.upomp.lthj.widget.LineFrameView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upomp_lthj_shield_icon" android:text="@string/upomp_lthj_reg_safe_prompt" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/upomp_lthj_comstominput">
+        <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_welcome_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upomp_lthj_welcome_word" android:layout_toLeftOf="@id/upomp_lthj_auto_welcome_btn" android:layout_centerVertical="true" />
+        <Button android:id="@id/upomp_lthj_auto_welcome_btn" android:text="自动生成" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_verifycode_btn" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/upomp_lthj_comstominput">
+        <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_safe_ask_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upomp_lthj_safe_ask" android:layout_toLeftOf="@id/upomp_lthj_safe_ask_drop" android:layout_centerVertical="true" />
+        <Button android:id="@id/upomp_lthj_safe_ask_drop" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/upomp_lthj_drop_button" />
+    </RelativeLayout>
+    <com.unionpay.upomp.lthj.widget.CustomInputView android:id="@id/upomp_lthj_safe_asw_view" android:text="@string/upomp_lthj_safe_asw" style="@style/upomp_lthj_comstominput" />
+    <Button android:id="@id/upomp_lthj_button_ok" android:text="@string/upomp_lthj_done" style="@style/upomp_lthj_button_big_single" />
+</LinearLayout>
