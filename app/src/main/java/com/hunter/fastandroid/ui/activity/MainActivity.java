@@ -1,38 +1,23 @@
 package com.hunter.fastandroid.ui.activity;
 
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 import com.hunter.fastandroid.R;
 import com.hunter.fastandroid.base.BaseActivity;
-import com.hunter.fastandroid.presenter.impl.LoginPresenterImpl;
-import com.hunter.fastandroid.presenter.impl.TestPresenterImpl;
-import com.hunter.fastandroid.presenter.interfaces.ILoginPresenter;
-import com.hunter.fastandroid.presenter.interfaces.ITestPresenter;
+import com.hunter.fastandroid.presenter.impl.UserPresenterImpl;
+import com.hunter.fastandroid.presenter.interfaces.IUserPresenter;
 import com.hunter.fastandroid.ui.custom.TitleBar;
 import com.hunter.fastandroid.ui.view.interfaces.ILoginView;
-import com.hunter.fastandroid.ui.view.interfaces.ITestView;
+import com.hunter.fastandroid.ui.view.interfaces.IRegisterView;
 import com.hunter.fastandroid.vo.request.LoginRequest;
-import com.hunter.fastandroid.vo.request.QueryParameter;
-import com.hunter.fastandroid.vo.response.QueryResult;
-import com.hunter.fastandroid.vo.response.ResultInfo;
+import com.hunter.fastandroid.vo.request.RegisterRequest;
 import com.hunter.fastandroid.vo.response.UserInfo;
 
 import butterknife.Bind;
 
-public class MainActivity extends BaseActivity implements ITestView {
+public class MainActivity extends BaseActivity implements ILoginView, IRegisterView {
     @Bind(R.id.title_bar)
     TitleBar titleBar;
-    @Bind(R.id.et_input)
-    EditText etInput;
-    @Bind(R.id.btn_submit)
-    Button btnSubmit;
-    @Bind(R.id.tv_result)
-    TextView tvResult;
 
-    ITestPresenter testPresenter;
+    IUserPresenter userPresenter;
 
     @Override
     public void initContentView() {
@@ -42,29 +27,35 @@ public class MainActivity extends BaseActivity implements ITestView {
 
     @Override
     public void initView() {
-        titleBar.setTitle("测试页面");
+        titleBar.setTitle("DEMO");
 
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                QueryParameter queryParameter = new QueryParameter();
-                queryParameter.phone = etInput.getText().toString();
+        // 开始注册
+        RegisterRequest registerRequest = new RegisterRequest();
+        registerRequest.userName = "huntermr";
+        registerRequest.password = "123456";
+        registerRequest.email = "hunter_android@163.com";
+        registerRequest.phone = "13552991918";
+        userPresenter.register(this, registerRequest);
 
-                testPresenter.attributionToInquiries(MainActivity.this, queryParameter);
-            }
-        });
+        // 开始登录
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.userName = "huntermr";
+        loginRequest.password = "123456";
+        userPresenter.login(this, loginRequest);
     }
 
     @Override
     public void initPresenter() {
-        testPresenter = new TestPresenterImpl();
+        userPresenter = new UserPresenterImpl();
     }
 
     @Override
-    public void queryResult(QueryResult result) {
-        ResultInfo resultInfo = result.result;
-        if (resultInfo != null) {
-            tvResult.setText("您的手机归属地信息是:\n" + resultInfo.province + resultInfo.city + resultInfo.company + resultInfo.card);
-        }
+    public void loginCallback(UserInfo userInfo) {
+        // TODO 登录成功,将用户信息显示在界面上
+    }
+
+    @Override
+    public void registerCallback() {
+        // TODO 注册成功,保存用户信息
     }
 }
