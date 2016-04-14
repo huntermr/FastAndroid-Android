@@ -13,8 +13,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
-
-import com.avos.avoscloud.AVAnalytics;
 import com.hunter.fastandroid.net.AsyncHttpNetCenter;
 import com.hunter.fastandroid.ui.custom.CustomConfirmDialog;
 
@@ -49,9 +47,6 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseView
         ButterKnife.bind(this);
         initPresenter();
         initView();
-
-        // leancloud的统计
-        AVAnalytics.trackAppOpened(getIntent());
     }
 
     @Override

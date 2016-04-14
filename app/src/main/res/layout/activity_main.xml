@@ -4,10 +4,16 @@
     android:layout_height="fill_parent"
     android:background="#fff3f4f6">
 
+    <com.hunter.fastandroid.ui.custom.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
     <RelativeLayout
         android:id="@id/contentLayoutrl"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar">
 
         <RelativeLayout
             android:id="@id/topBg"

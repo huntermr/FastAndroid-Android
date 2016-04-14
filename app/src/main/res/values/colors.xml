@@ -2,7 +2,6 @@
 <resources>
     <color name="transparent_background">#99ffffff</color>
     <color name="GrayLine">#ffdee3ee</color>
-    <color name="white">#ffffffff</color>
     <color name="blue">#00000000</color>
     <color name="background">#fff3f4f6</color>
     <color name="test">#fff3f4f6</color>

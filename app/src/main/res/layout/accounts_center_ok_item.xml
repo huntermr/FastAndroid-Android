@@ -20,7 +20,7 @@
         <View android:id="@id/line3" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linSendAddressLayout" />
         <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linSendLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line3">
             <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/textSendType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送方式 ：" />
-            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textShippingMethod " android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffd61229" android:ellipsize="end" android:id="@id/textShippingMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递" android:singleLine="true" />
         </LinearLayout>
         <View android:id="@id/line4" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/linSendLayout" />
         <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linTimedLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_below="@id/line4">

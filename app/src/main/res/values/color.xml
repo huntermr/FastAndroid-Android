@@ -18,10 +18,8 @@
     <color name="red_hint">#FF5F5F</color>
     <color name="main_blue">#00A3FF</color>
     <color name="login_button">#3391DA</color>
-
     <color name="order_unpaid">#00A3FF</color>
     <color name="order_paid">#28D33C</color>
     <color name="order_cancel">#FF5858</color>
     <color name="order_complete">#686868</color>
-
 </resources>

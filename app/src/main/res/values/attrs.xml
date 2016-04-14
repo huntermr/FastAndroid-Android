@@ -54,7 +54,7 @@
     <attr name="ptrDrawableTop" format="reference" />
     <attr name="ptrDrawableBottom" format="reference" />
     <attr name="galleryStyle" format="reference" />
-    <attr name="spinnerStyle" format="reference" />
+    <!--<attr name="spinnerStyle" format="reference" />-->
     <attr name="gravity">
         <flag name="left" value="0x00000003" />
         <flag name="right" value="0x00000005" />
@@ -81,7 +81,7 @@
     <attr name="dividerColor" format="color" />
     <attr name="indicatorHeight" format="dimension" />
     <attr name="underlineHeight" format="dimension" />
-    <attr name="dividerPadding" format="dimension" />
+    <!--<attr name="dividerPadding" format="dimension" />-->
     <attr name="tabPaddingLeftRight" format="dimension" />
     <attr name="scrollOffset" format="dimension" />
     <attr name="tabBackground" format="reference" />

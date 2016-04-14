@@ -1,6 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions{
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
@@ -18,6 +28,7 @@ android {
         versionCode 3
         versionName "1.3"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -28,6 +39,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    //avoscloud-sdk 为 LeanCloud基础包
+    compile ('cn.leancloud.android:avoscloud-sdk:v3.+')
     compile 'de.greenrobot:greendao:1.3.7'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.loopj.android:android-async-http:1.4.7'

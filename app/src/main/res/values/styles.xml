@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--标题栏样式-->
+    <style name="TitleBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <!--标题栏字体样式-->
+    <style name="TitleBarText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--星期单选框样式-->
+    <style name="WeekCheckbox">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="upomp_lthj_layout_width_height_ff">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>

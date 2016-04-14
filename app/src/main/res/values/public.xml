@@ -1499,7 +1499,7 @@
     <public type="id" name="line3" id="0x7f06015a" />
     <public type="id" name="linSendLayout" id="0x7f06015b" />
     <public type="id" name="textSendType" id="0x7f06015c" />
-    <public type="id" name="textShippingMethod " id="0x7f06015d" />
+    <public type="id" name="textShippingMethod" id="0x7f06015d" />
     <public type="id" name="line4" id="0x7f06015e" />
     <public type="id" name="linTimedLayout" id="0x7f06015f" />
     <public type="id" name="textSendTime" id="0x7f060160" />
@@ -1879,7 +1879,7 @@
     <public type="id" name="txtLowerPrice" id="0x7f0602d6" />
     <public type="id" name="txtTime" id="0x7f0602d7" />
     <public type="id" name="textSuggest" id="0x7f0602d8" />
-    <public type="id" name="editContact " id="0x7f0602d9" />
+    <public type="id" name="editContact" id="0x7f0602d9" />
     <public type="id" name="payTypeList" id="0x7f0602da" />
     <public type="id" name="txtSuggestItem" id="0x7f0602db" />
     <public type="id" name="txtComplain" id="0x7f0602dc" />
