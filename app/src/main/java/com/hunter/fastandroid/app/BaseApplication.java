@@ -7,6 +7,9 @@ import android.content.pm.PackageManager;
 import android.util.DisplayMetrics;
 
 import com.avos.avoscloud.AVOSCloud;
+import com.avos.avoscloud.AVObject;
+import com.hunter.fastandroid.dao.ProductsCategory;
+import com.hunter.fastandroid.dao.ProductsGroup;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
@@ -46,6 +49,8 @@ public class BaseApplication extends Application {
 
         mInstance = this;
 
+        AVObject.registerSubclass(ProductsGroup.class);
+        AVObject.registerSubclass(ProductsCategory.class);
         AVOSCloud.initialize(this, "EHQcVKhHSai5zu694WnPbGHN-gzGzoHsz", "ns5uVOylKegxbQznSAFE2xjo");
 
         initImageLoader();

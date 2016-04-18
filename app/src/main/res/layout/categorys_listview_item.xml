@@ -1,17 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
-            <include android:id="@id/backLayout" layout="@layout/back_layout" />
-            <TextView android:textColor="@color/biaoti_color_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分类" android:layout_centerInParent="true" style="@style/top_title" />
-            <TextView android:id="@id/editShopCarBtn" android:text="编辑" style="@style/title_right_text_button" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff3f4f6">
+
+    <RelativeLayout
+        android:id="@id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@id/topBg"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/biaoti_color">
+
+            <include
+                android:id="@id/backLayout"
+                layout="@layout/back_layout" />
+
+            <TextView
+                style="@style/top_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="分类"
+                android:textColor="@color/biaoti_color_txt" />
+
+            <TextView
+                android:id="@id/editShopCarBtn"
+                style="@style/title_right_text_button"
+                android:text="编辑" />
         </RelativeLayout>
-        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_below="@id/topBg" />
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topBg">
-            <ImageView android:id="@id/listview_item_imageview" android:layout_width="fill_parent" android:layout_height="20.0dip" android:src="@drawable/btn_cannot_buy" android:scaleType="fitXY" />
-            <com.vancl.adapter.NoScrollGridView android:id="@id/listview_item_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topBg"
+            android:scaleType="fitXY"
+            android:src="@drawable/contents_line_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/topBg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/listview_item_imageview"
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_cannot_buy" />
+
+            <com.vancl.adapter.NoScrollGridView
+                android:id="@id/listview_item_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5.0dip" />
         </LinearLayout>
     </RelativeLayout>
+
     <include layout="@layout/bottom_main" />
 </RelativeLayout>

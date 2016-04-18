@@ -10,90 +10,97 @@ import android.widget.BaseAdapter;
 
 /**
  * 自定义BaseAdapter
- * @author user
  *
  * @param <T>
+ * @author user
  */
 public abstract class CustomBaseAdapter<T> extends BaseAdapter {
-	private LayoutInflater mInflater;
-	private List<T> mDatas;
-	private Context mContext;
+    private LayoutInflater mInflater;
+    private List<T> mDatas;
+    private Context mContext;
 
-	public CustomBaseAdapter(Context context) {
-		mContext = context;
-		mInflater = (LayoutInflater) mContext
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	}
+    public CustomBaseAdapter(Context context) {
+        mContext = context;
+        mInflater = (LayoutInflater) mContext
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
 
-	/**
-	 * 获取上下文对象
-	 * 
-	 * @return
-	 */
-	public Context getContext() {
-		return mContext;
-	}
+    /**
+     * 获取上下文对象
+     *
+     * @return
+     */
+    public Context getContext() {
+        return mContext;
+    }
 
-	/**
-	 * 获取item布局
-	 * 
-	 * @return
-	 */
-	public View getItemView(int resource, ViewGroup parent) {
-		return mInflater.inflate(resource, parent, false);
-	}
-	
-	/**
-	 * 获取指定item数据
-	 * 
-	 * @param position
-	 * @return
-	 */
-	public T getItemData(int position) {
-		return mDatas == null ? null : mDatas.get(position);
-	}
+    /**
+     * 获取item布局
+     *
+     * @return
+     */
+    public View getItemView(int resource, ViewGroup parent) {
+        return mInflater.inflate(resource, parent, false);
+    }
 
-	/**
-	 * 获取数据集合
-	 * 
-	 * @return
-	 */
-	public List<T> getData() {
-		return mDatas;
-	}
+    /**
+     * 获取指定item数据
+     *
+     * @param position
+     * @return
+     */
+    public T getItemData(int position) {
+        return mDatas == null ? null : mDatas.get(position);
+    }
 
-	/**
-	 * 设置数据集合
-	 * 
-	 * @param datas
-	 */
-	public void setData(List<T> datas) {
-		this.mDatas = datas;
-	}
+    /**
+     * 获取数据集合
+     *
+     * @return
+     */
+    public List<T> getData() {
+        return mDatas;
+    }
 
-	/**
-	 * 移除指定item的数据
-	 * @param position
-	 */
-	public void removeData(int position){
-		this.mDatas.remove(position);
-	}
+    /**
+     * 设置数据集合
+     *
+     * @param datas
+     */
+    public void setData(List<T> datas) {
+        this.mDatas = datas;
+    }
 
-	@Override
-	public int getCount() {
-		return mDatas == null ? 0 : mDatas.size();
-	}
+    /**
+     * 移除指定item的数据
+     *
+     * @param position
+     */
+    public void removeData(int position) {
+        this.mDatas.remove(position);
+    }
 
-	@Override
-	public Object getItem(int position) {
-		return mDatas == null ? null : mDatas.get(position);
-	}
+    public void clear() {
+        if (mDatas == null) return;
 
-	@Override
-	public long getItemId(int position) {
-		return 0;
-	}
+        mDatas.clear();
+    }
 
-	@Override
-	public abstract View getView(int position, View convertView, ViewGroup parent);
+    @Override
+    public int getCount() {
+        return mDatas == null ? 0 : mDatas.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return mDatas == null ? null : mDatas.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public abstract View getView(int position, View convertView, ViewGroup parent);
 }

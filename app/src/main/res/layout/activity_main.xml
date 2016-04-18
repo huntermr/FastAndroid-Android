@@ -50,6 +50,7 @@
                     android:layout_height="fill_parent"
                     android:background="@color/group_item_bg"
                     android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
                     android:divider="#ffcdd0d0"
                     android:dividerHeight="3.0px"
                     android:scrollbars="none"

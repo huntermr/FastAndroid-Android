@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/homeContent" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/scrollViewfirstview" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="46.0dip" ptr:ptrHeaderBackground="@android:color/white" ptr:ptrHeaderTextColor="@android:color/darker_gray" ptr:ptrAnimationStyle="flip" xmlns:ptr="http://schemas.android.com/apk/res-auto">
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-                <ImageView android:id="@id/imgPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/homeContent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff3f4f6"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/scrollViewfirstview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="46.0dip"
+        android:fadingEdgeLength="0.0dip"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderBackground="@android:color/white"
+        ptr:ptrHeaderTextColor="@android:color/darker_gray">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@id/lin_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <ImageView
+                    android:id="@id/imgPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5.0dip" />
             </RelativeLayout>
-            <WebView android:id="@id/webViewHome" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+            <WebView
+                android:id="@id/webViewHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
 </LinearLayout>

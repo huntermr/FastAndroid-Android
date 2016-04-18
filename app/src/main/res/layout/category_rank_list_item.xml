@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/relComment" android:background="@anim/list_selector" android:layout_width="fill_parent" android:layout_height="52.0dip">
-        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/textCategoryItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="精品排行榜" android:layout_centerVertical="true" />
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/home_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52.0dip">
+
+    <RelativeLayout
+        android:id="@id/relComment"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@anim/list_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/textCategoryItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dip"
+            android:text="精品排行榜"
+            android:textColor="#ff333333"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:src="@drawable/home_arrows" />
     </RelativeLayout>
-    <LinearLayout android:id="@id/line1" android:background="@drawable/devideline_fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/relComment" />
+
+    <LinearLayout
+        android:id="@id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:layout_below="@id/relComment"
+        android:background="@drawable/devideline_fafafa" />
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.hunter.fastandroid.base;
 
 import android.content.Context;
 
+import com.avos.avoscloud.AVQuery;
 import com.hunter.fastandroid.net.AsyncHttpNetCenter;
 import com.hunter.fastandroid.net.StringTransactionListener;
 import com.hunter.fastandroid.net.TransactionAsyncHttpStringHandler;
