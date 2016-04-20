@@ -1,14 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/frmProductImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
-        <ImageView android:layout_gravity="center" android:id="@id/imgProduct" android:layout_width="166.0dip" android:layout_height="166.0dip" android:scaleType="fitXY" />
-        <TextView android:textColor="#ffffffff" android:gravity="right" android:layout_gravity="bottom|center|right" android:id="@id/textIsNew" android:background="@drawable/is_new_background" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="61.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="新" />
-        <ImageView android:layout_gravity="center|right|top" android:id="@id/imgBelongType" android:background="@drawable/list_v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/frmProductImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip">
+
+        <ImageView
+            android:id="@id/imgProduct"
+            android:layout_width="166.0dip"
+            android:layout_height="166.0dip"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@id/textIsNew"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginBottom="7.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="61.0dip"
+            android:background="@drawable/is_new_background"
+            android:gravity="right"
+            android:text="新"
+            android:textColor="#ffffffff"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@id/imgBelongType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center|right|top"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginTop="7.0dip"
+            android:background="@drawable/list_v"
+            android:visibility="gone" />
     </FrameLayout>
-    <RelativeLayout android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_below="@id/frmProductImage" android:layout_centerHorizontal="true">
-        <TextView android:textSize="14.0sp" android:textColor="#ff909090" android:ellipsize="end" android:id="@id/textProductNameBig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称" android:maxLines="1" android:lines="1" android:layout_centerHorizontal="true" />
-        <TextView android:textSize="14.0sp" android:textColor="#ffcc3647" android:id="@id/textVanclPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="售价:￥100.00" android:layout_below="@id/textProductNameBig" android:layout_centerHorizontal="true" />
-        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/textShopPrice" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="" android:minLines="1" android:singleLine="true" android:layout_below="@id/textVanclPrice" />
+
+    <RelativeLayout
+        android:layout_width="140.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frmProductImage"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@id/textProductNameBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="商品名称"
+            android:textColor="#ff909090"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@id/textVanclPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProductNameBig"
+            android:layout_centerHorizontal="true"
+            android:text="售价:￥100.00"
+            android:textColor="#ffcc3647"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@id/textShopPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_below="@id/textVanclPrice"
+            android:minLines="1"
+            android:paddingBottom="10.0dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
     </RelativeLayout>
 </RelativeLayout>

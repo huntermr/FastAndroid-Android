@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="48.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:orientation="horizontal" android:id="@id/relComment" android:background="@drawable/cate_tab_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
-        <ImageView android:id="@id/item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/txtKeyWord" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/item_arrow" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/relComment"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/cate_tab_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip" />
+
+        <TextView
+            android:id="@id/txtKeyWord"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/item_arrow"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
     </RelativeLayout>
 </RelativeLayout>

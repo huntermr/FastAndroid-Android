@@ -22,7 +22,11 @@ public class ProductsCategory extends AVObject {
     }
 
     public String getImage() {
-        return getAVFile("categoryImage").getUrl();
+        if (getAVFile("categoryImage") != null) {
+            return getAVFile("categoryImage").getUrl();
+        }
+
+        return "";
     }
 
     public void setImage(String categoryImage) {

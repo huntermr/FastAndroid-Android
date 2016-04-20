@@ -1,6 +1,7 @@
 package com.hunter.fastandroid.model.interfaces;
 
 import com.avos.avoscloud.FindCallback;
+import com.hunter.fastandroid.dao.Products;
 import com.hunter.fastandroid.dao.ProductsCategory;
 import com.hunter.fastandroid.dao.ProductsGroup;
 
@@ -22,4 +23,12 @@ public interface IProductsModel {
      * @param findCallback
      */
     void productsCategorys(int groupId, FindCallback<ProductsCategory> findCallback);
+
+    /**
+     * 根据产品分类id获取产品列表
+     *
+     * @param categoryId
+     * @param findCallback
+     */
+    void products(int categoryId, FindCallback<Products> findCallback);
 }

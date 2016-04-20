@@ -5,6 +5,7 @@ import android.content.Context;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.hunter.fastandroid.base.BaseModel;
+import com.hunter.fastandroid.dao.Products;
 import com.hunter.fastandroid.dao.ProductsCategory;
 import com.hunter.fastandroid.dao.ProductsGroup;
 import com.hunter.fastandroid.model.interfaces.IProductsModel;
@@ -36,6 +37,14 @@ public class ProductsModelImpl extends BaseModel implements IProductsModel {
 
         AVQuery<ProductsCategory> query = AVQuery.getQuery(ProductsCategory.class);
         query.whereEqualTo("groupId", groupId);
+
+        query.findInBackground(findCallback);
+    }
+
+    @Override
+    public void products(int categoryId, FindCallback<Products> findCallback) {
+        AVQuery<Products> query = AVQuery.getQuery(Products.class);
+        query.whereEqualTo("productCategoryId", categoryId);
 
         query.findInBackground(findCallback);
     }

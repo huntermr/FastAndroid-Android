@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVObject;
+import com.hunter.fastandroid.dao.Products;
 import com.hunter.fastandroid.dao.ProductsCategory;
 import com.hunter.fastandroid.dao.ProductsGroup;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
@@ -51,6 +52,7 @@ public class BaseApplication extends Application {
 
         AVObject.registerSubclass(ProductsGroup.class);
         AVObject.registerSubclass(ProductsCategory.class);
+        AVObject.registerSubclass(Products.class);
         AVOSCloud.initialize(this, "EHQcVKhHSai5zu694WnPbGHN-gzGzoHsz", "ns5uVOylKegxbQznSAFE2xjo");
 
         initImageLoader();
@@ -72,17 +74,17 @@ public class BaseApplication extends Application {
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
                 this)
                 .threadPoolSize(3)
-                        // default
+                // default
                 .threadPriority(Thread.NORM_PRIORITY - 2)
-                        // default
+                // default
                 .tasksProcessingOrder(QueueProcessingType.FIFO)
-                        // default
+                // default
                 .denyCacheImageMultipleSizesInMemory()
                 .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
                 .memoryCacheSize(2 * 1024 * 1024).memoryCacheSizePercentage(13)
-                        // default
+                // default
                 .diskCache(new UnlimitedDiscCache(cacheDir))
-                        // default
+                // default
                 .diskCacheSize(20 * 1024 * 1024).diskCacheFileCount(100)
                 .diskCacheFileNameGenerator(new Md5FileNameGenerator()) // default
                 .defaultDisplayImageOptions(defaultOptions) // default

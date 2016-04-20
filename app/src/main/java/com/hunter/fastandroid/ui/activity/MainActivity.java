@@ -1,5 +1,6 @@
 package com.hunter.fastandroid.ui.activity;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -13,6 +14,7 @@ import com.hunter.fastandroid.dao.ProductsCategory;
 import com.hunter.fastandroid.dao.ProductsGroup;
 import com.hunter.fastandroid.presenter.impl.ProductsPresenterImpl;
 import com.hunter.fastandroid.presenter.interfaces.IProductsPresenter;
+import com.hunter.fastandroid.ui.activity.products.ProductsActivity;
 import com.hunter.fastandroid.ui.custom.TitleBar;
 import com.hunter.fastandroid.ui.view.interfaces.IProductsCategoryView;
 import com.hunter.fastandroid.ui.view.interfaces.IProductsGroupView;
@@ -35,9 +37,8 @@ public class MainActivity extends BaseActivity implements IProductsGroupView, IP
     IProductsPresenter productsPresenter;
 
     @Override
-    public void initContentView() {
-        // 设置布局文件
-        setContentView(R.layout.activity_main);
+    protected int getLayoutRes() {
+        return R.layout.activity_main;
     }
 
     @Override
@@ -68,6 +69,15 @@ public class MainActivity extends BaseActivity implements IProductsGroupView, IP
         // 初始化产品分类适配器
         categorysAdapter = new CategorysAdapter(this);
         gvCategorys.setAdapter(categorysAdapter);
+        gvCategorys.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ProductsCategory itemData = categorysAdapter.getItemData(position);
+                Intent intent = new Intent(MainActivity.this, ProductsActivity.class);
+                intent.putExtra("categoryId", itemData.getId());
+                startActivity(intent);
+            }
+        });
 
         // 开始获取所有产品分组数据
         productsPresenter.productsGroups(this);

@@ -1,42 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/relMain" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/relLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_alignParentBottom="true">
-        <TextView android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="89.0dip" android:text="正在加载...." />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/relMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff3f4f6">
+
+    <RelativeLayout
+        android:id="@id/relLoading"
+        android:layout_width="fill_parent"
+        android:layout_height="89.0dip"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="89.0dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="正在加载...."
+            android:textColor="#ff666666"
+            android:textSize="20.0sp" />
     </RelativeLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/relLoading">
-        <RelativeLayout android:id="@id/topBg" android:background="@color/biaoti_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relLoading"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/topBg"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/biaoti_color">
+
             <include layout="@layout/back_layout" />
-            <TextView android:textColor="@color/daohang_biaoti" android:id="@id/txtKeyWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/top_title" />
-            <TextView android:id="@id/productNum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/txtKeyWord" android:layout_centerVertical="true" />
-            <RelativeLayout android:id="@id/relNineSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/relFilterIcon" android:layout_centerVertical="true">
-                <ImageView android:id="@id/imageNineSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/browse_mode_one" android:layout_centerInParent="true" style="@style/title_action_button" />
+
+            <TextView
+                android:id="@id/txtKeyWord"
+                style="@style/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="@color/daohang_biaoti" />
+
+            <TextView
+                android:id="@id/productNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/txtKeyWord"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@id/relNineSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/relFilterIcon">
+
+                <ImageView
+                    android:id="@id/imageNineSingle"
+                    style="@style/title_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/browse_mode_one" />
             </RelativeLayout>
-            <RelativeLayout android:id="@id/relFilterIcon" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-                <ImageView android:id="@id/filterImg" android:src="@drawable/filter_btn" android:layout_centerInParent="true" style="@style/title_action_button" />
+
+            <RelativeLayout
+                android:id="@id/relFilterIcon"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip">
+
+                <ImageView
+                    android:id="@id/filterImg"
+                    style="@style/title_action_button"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/filter_btn" />
             </RelativeLayout>
         </RelativeLayout>
-        <LinearLayout android:orientation="horizontal" android:background="@drawable/title_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <LinearLayout android:gravity="center" android:id="@id/newGoods" android:background="@drawable/productlist_tab_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/newProductLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新品" android:drawablePadding="3.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_tab_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/newGoods"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/productlist_tab_down"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/newProductLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3.0dip"
+                    android:text="新品"
+                    android:textColor="#ff515c68"
+                    android:textSize="17.0sp" />
             </LinearLayout>
-            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-            <LinearLayout android:gravity="center" android:id="@id/salesVolume" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/salesVolumeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销量" android:drawablePadding="3.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/productlist_tab_line" />
+
+            <LinearLayout
+                android:id="@id/salesVolume"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/salesVolumeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3.0dip"
+                    android:text="销量"
+                    android:textColor="#ff515c68"
+                    android:textSize="17.0sp" />
             </LinearLayout>
-            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-            <LinearLayout android:gravity="center" android:id="@id/price" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/priceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:drawableRight="@drawable/arrow_no_red" android:drawablePadding="3.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/productlist_tab_line" />
+
+            <LinearLayout
+                android:id="@id/price"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/priceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3.0dip"
+                    android:drawableRight="@drawable/arrow_no_red"
+                    android:text="价格"
+                    android:textColor="#ff515c68"
+                    android:textSize="17.0sp" />
             </LinearLayout>
-            <LinearLayout android:background="@drawable/productlist_tab_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-            <LinearLayout android:gravity="center" android:id="@id/praise" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
-                <TextView android:textSize="17.0sp" android:textColor="#ff515c68" android:layout_gravity="center" android:id="@id/praiseLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评" android:drawablePadding="3.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/productlist_tab_line" />
+
+            <LinearLayout
+                android:id="@id/praise"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/praiseLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3.0dip"
+                    android:text="好评"
+                    android:textColor="#ff515c68"
+                    android:textSize="17.0sp" />
             </LinearLayout>
         </LinearLayout>
-        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <include android:id="@id/relLogo" layout="@layout/default_logo" />
-            <GridView android:gravity="center" android:id="@id/gridSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="#fff3f4f6" android:numColumns="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@id/relLogo"
+                layout="@layout/default_logo" />
+
+            <GridView
+                android:id="@id/gridSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="#fff3f4f6"
+                android:gravity="center"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollingCache="false" />
         </RelativeLayout>
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:id="@id/linBackGround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@id/linBackGround"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" />
 </RelativeLayout>
